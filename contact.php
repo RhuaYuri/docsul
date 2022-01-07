@@ -3,7 +3,7 @@
 /* Code by David McKeown - craftedbydavid.com */
 /* Editable entries are bellow */
 
-$send_to = "support@imransdesign.com"; //Change to Your Own Email address here.
+$send_to = "rhuanyuri12@gmail.com"; //Change to Your Own Email address here.
 $send_subject = "Message From N.Agency ";
 
 
