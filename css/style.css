@@ -1069,7 +1069,7 @@ blockquote {
     09. Services Section
 ---------------------------------------------------*/
 .service {
-  background-color: rgb(162 196 195);
+  background-color: rgb(162, 196, 195);
   padding: 40px 30px 30px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
