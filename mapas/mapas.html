@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="pr-br">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -10,6 +10,8 @@
     <meta name="description" content="N.Agency - Responisve Landing Page for Agency">
     <meta name="keywords" content="">
     <meta name="author" content="tabthemes">
+
+    <link href="../css/freelancer.min.css" rel="stylesheet">
     
     <!-- Favicons -->
     <link rel="shortcut icon" href="../img/favicon.png">
@@ -23,6 +25,10 @@
     
     <!-- Bootstrap CSS -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+
+
     
     <!-- CSS Files For Plugin -->
     <link href="../css/animate.css" rel="stylesheet">
@@ -74,8 +80,8 @@
                             <!-- Logo -->
                             <div class="logo-container">
                                 <div class="logo-wrap local-scroll">
-                                  <a href="index.html">
-                                    <img class="logo" src="img/logo.png" alt="logo" data-rjs="2">
+                                  <a href="../index.html">
+                                    <img class="logo" src="../img/logo.png" alt="logo" data-rjs="2">
                                   </a>
                                 </div>
                             </div>
@@ -93,10 +99,8 @@
                                     <li><a href="index.html#blog">blog</a></li>                       
                                     <li><a href="index.html#contact">Contact</a></li>
                                 </ul>
-
                             </div>
                         </div> <!-- /.col -->
-
                     </div> <!-- /.row -->
                 </div> <!--/.container -->
             </div> <!-- /.navigation-overlay -->
@@ -114,20 +118,19 @@
 
     
    <!-- Start Outros -->
-   <section id="outros" class="p-top-80 p-bottom-80" style="padding-top: 0px;">
-
-    <!-- === blog === -->
-    <div class="container ">
+   <section id="portfolio" class="light-bg p-top-80 p-bottom-80">
+    <div class="container">
         <div class="row">
-
-            <div id="owl-blog" class="owl-carousel owl-theme">
 
                 <!-- === Blog item 1 === -->
                 
-                <div class="blog wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.7s">
-                    <div class="blog-media">
-                        <a  href="blog_single_post.html"><img src="../img/blog/b1.jpg" alt=""></a>
-                    </div><!--post media-->
+                <div class="col-md-3 col-sm-6" data-wow-duration="1s" data-wow-delay="0.7s">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div class="blog-media">
+                            <a  href="#"><img src="../img/blog/b1.jpg" alt=""></a>
+                        </div><!--post media-->
+                    </div>
+                    
                     
                     <div class="blog-post-info clearfix">
                         <span class="time"><i class="fa fa-calendar"></i> 12 January 2017</span>
@@ -135,14 +138,21 @@
                     </div><!--post info-->
                     
                     <div class="blog-post-body">
-                        <h4><a class="title" href="blog_single_post.html">Shingeki no Kyoji</a></h4>
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <h4><a class="title" href="#">Shingeki no Kyoji</a></h4>
+                        </div>
+                        
                         <p class="p-bottom-20">Impossible alteration devonshire to is interested stimulated dissimilar. To matter esteem polite do if. Those an equal point no years do. Depend warmth fat but her but played.</p>
-                        <a href="blog_single_post.html" class="read-more">Read More >></a>
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <button class="btn btn-primary" href="#portfolioModal1" data-dismiss="modal">
+                                Fechar Janela
+                            </button>
+                        </div>
                     </div><!--post body-->                   
                 </div> <!-- /.blog -->
 
                 <!-- === Blog item 2 === -->
-                <div class="blog wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.7s">
+                <div class="col-md-3 col-sm-6" data-wow-duration="1s" data-wow-delay="0.7s">
                     <div class="blog-media">
                         <a  href="blog_single_post.html"><img src="../img/blog/b2.jpg" alt=""></a>
                     </div><!--post media-->
@@ -160,7 +170,7 @@
                 </div> <!-- /.blog -->
 
                 <!-- === Blog item 3 === -->
-                <div class="blog wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.7s">
+                <div class="col-md-3 col-sm-6" data-wow-duration="1s" data-wow-delay="0.7s">
                     <div class="blog-media">
                         <a  href="blog_single_post.html"><img src="../img/blog/b3.jpg" alt=""></a>
                     </div><!--post media-->
@@ -178,7 +188,7 @@
                 </div> <!-- /.blog -->
 
                 <!-- === Blog item 4 === -->
-                <div class="blog wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.7s">
+                <div class="col-md-3 col-sm-6" data-wow-duration="1s" data-wow-delay="0.7s">
                     <div class="blog-media">
                         <a  href="blog_single_post.html"><img src="../img/blog/b4.jpg" alt=""></a>
                     </div><!--post media-->
@@ -194,8 +204,22 @@
                         <a href="blog_single_post.html" class="read-more">Read More >></a>
                     </div><!--post body-->                     
                 </div> <!-- /.blog -->
-
-            </div><!-- /#owl-testimonials -->
+                <div class="col-md-3 col-sm-6" data-wow-duration="1s" data-wow-delay="0.7s">
+                    <div class="blog-media">
+                        <a  href="blog_single_post.html"><img src="../img/blog/b4.jpg" alt=""></a>
+                    </div><!--post media-->
+                    
+                    <div class="blog-post-info clearfix">
+                        <span class="time"><i class="fa fa-calendar"></i> 01 January 2017</span>
+                        <span class="comments"><a href="#"><i class="fa fa-comments"></i> 7 Comments</a></span>
+                    </div><!--post info-->
+                    
+                    <div class="blog-post-body">
+                        <h4><a class="title" href="blog_single_post.html">Nanatsu no Taizai</a></h4>
+                        <p class="p-bottom-20">Impossible alteration devonshire to is interested stimulated dissimilar. To matter esteem polite do if. Those an equal point no years do. Depend warmth fat but her but played.</p>
+                        <a href="blog_single_post.html" class="read-more">Read More >></a>
+                    </div><!--post body-->                     
+                </div> <!-- /.blog -->
 
         </div> <!-- /.row -->
     </div> <!-- /.container -->
@@ -222,6 +246,53 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Paul Rudd completa 51 anos de idade e fãs brincam com sua aparência jovial</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                
+                <img class="img-fluid rounded mb-5" src="https://pbs.twimg.com/media/EU9fQbuXgAAQjUf?format=jpg&name=small" alt="">
+                <p style="font: caption;">As fotos foram tiradas em 1996, 2005 ou 2018?</p>
+                <br>
+          
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5" style="text-align: justify;">Paul Rudd, o intérprete do Homem-Formiga no Universo Cinematográfico Marvel (UCM), completa 51 anos de idade nesta terça-feira (7). A ocasião fez muita gente se perguntar como que o ator continua parecendo tão jovem.
+
+                  Até mesmo o próprio Paul Rudd parece admitir sua juventude “eterna”. Em sua participação na edição 2019 da feira C2E2, o ator brincou e disse que tem 80 anos por dentro.
+                  
+                  Como Paul Rudd não aparenta, de fato, envelhecer, muitos fãs e até colegas do ator lhe desejaram parabéns, mas sem se esquecerem de fazer alguma brincadeira sobre o fato</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Fechar Janela
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <!-- Back to top -->
     <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-angle-up"></i></a>
@@ -229,6 +300,9 @@
 
     
     <!-- jQuery -->
+    <!-- Custom scripts for this template -->
+    <script src="../vendor/freelancer.min.js"></script>
+    <script src="../vendor/bootstrap.bundle.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     
     <!-- Bootstrap -->
@@ -247,6 +321,8 @@
     <script src="../js/retina.min.js"></script>
     <script src="../js/wow.min.js"></script>
     <script src="../inc/owlcarousel/js/owl.carousel.min.js"></script>
+
+    <script src="../js/freelancer.min2.js"></script>
     
     <!-- Custom Plugin -->
     <script src="../js/custom.js"></script>
