@@ -31,7 +31,6 @@
     <!-- Load Babel -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    
 
 
     
@@ -224,9 +223,49 @@
                 </div>
                 
 
+            
                 
                 <!--End post single--> 
-                <!--Start Questões-->
+         
+ 
+            </div> <!-- /.col -->
+              
+            <div class="col-sm-4 sidebar">
+                
+                <!-- Widget 1 -->
+                <div class="widget widget-search">
+                    <form action="#" class="search-form">
+                     <input type="text" onfocus="if(this.value == 'Search') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search'; }"  value="Search">
+                     <input type="submit" class="submit-search" value="Ok">
+                   </form>
+                </div> <!--End widget-->
+                
+                <!-- Widget 2 -->
+                <div class="widget">
+                    <h4>Categories</h4>
+                    <ul class="cat-list">
+                        <li><a href="#">Pasto Bons <span class="countCat">(12)</span></a></li>
+                        <li><a href="#">Viana <span class="countCat">(22)</span></a></li>
+                        <li><a href="#">Caxias <span class="countCat">(16)</span></a></li>
+                        <li><a href="#">Documentação <span class="countCat">(2)</span></a></li>
+                    </ul> 
+                </div> <!--End widget-->
+                    
+                               
+                <!--Widget 4-->
+                <div class="widget">
+                    <h4>Documentação</h4>
+                    <ul class="cat-archives">
+                        <li><a href="#">Ano de 1870</a></li>
+                        <li><a href="#">Ano de 1871</a></li>
+                        <li><a href="#">Ano de 1872</a></li>
+                        <li><a href="#">Ano de 1873</a></li>
+                        <li><a href="#">Ano de 1874</a></li>
+                    </ul>
+                </div> <!--End widget-->
+            </div> <!-- /.col -->
+
+                   <!--Start Questões-->
 <section id="questoes" class="light-bg p-top-80 p-bottom-80">
     <div class="container">
         <div class="row">
@@ -584,43 +623,6 @@
     </div>
   </section>
   <!--End Questões-->  
- 
-            </div> <!-- /.col -->
-              
-            <div class="col-sm-4 sidebar">
-                
-                <!-- Widget 1 -->
-                <div class="widget widget-search">
-                    <form action="#" class="search-form">
-                     <input type="text" onfocus="if(this.value == 'Search') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search'; }"  value="Search">
-                     <input type="submit" class="submit-search" value="Ok">
-                   </form>
-                </div> <!--End widget-->
-                
-                <!-- Widget 2 -->
-                <div class="widget">
-                    <h4>Categories</h4>
-                    <ul class="cat-list">
-                        <li><a href="#">Pasto Bons <span class="countCat">(12)</span></a></li>
-                        <li><a href="#">Viana <span class="countCat">(22)</span></a></li>
-                        <li><a href="#">Caxias <span class="countCat">(16)</span></a></li>
-                        <li><a href="#">Documentação <span class="countCat">(2)</span></a></li>
-                    </ul> 
-                </div> <!--End widget-->
-                    
-                               
-                <!--Widget 4-->
-                <div class="widget">
-                    <h4>Documentação</h4>
-                    <ul class="cat-archives">
-                        <li><a href="#">Ano de 1870</a></li>
-                        <li><a href="#">Ano de 1871</a></li>
-                        <li><a href="#">Ano de 1872</a></li>
-                        <li><a href="#">Ano de 1873</a></li>
-                        <li><a href="#">Ano de 1874</a></li>
-                    </ul>
-                </div> <!--End widget-->
-            </div> <!-- /.col -->
         
         </div> <!-- /.row -->
         </div> <!-- /.container -->
@@ -629,7 +631,7 @@
     <section id="comentaris" class="dark-bg p-top-80 p-bottom-80">
         <div class="container">
             <div class="row">
-                <iframe src="https://rhuayuri.github.io/docsul/comentarios.html" verticalscrolling="no" style="height: 50vh;;width:100vh;"  frameborder="0" scrolling = "no"></iframe>
+                <iframe src="https://rhuayuri.github.io/docsul/comentarios.html" verticalscrolling="no" style="height: 60vh;width:100vh;"  frameborder="0" scrolling = "no"></iframe>
             </div>      
         </div>
       </section>
@@ -677,8 +679,28 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
+                <div>
+                    <input type="radio" class="slide-controller" name="slide" checked />
+                    <input type="radio" class="slide-controller" name="slide" />
+                    <div class="slide-show" >
+                        <ul class="slides-list" >
+                            <li class="slide" >
+                                <a href="./img/img_registros_casamento/rg1.png" data-dismiss="modal" class="pf-style lightbox-image mfp-image">
+                                    <img src="./img/img_registros_casamento/rg1.png" alt="Feature Image" class="img-responsive wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.6s" />
+                                </a>
+                            </li>
+                            <li class="slide" >
+                                <a href="./img/img_registros_casamento/rg3.png" data-dismiss="modal" class="pf-style lightbox-image mfp-image">
+                                    <img src="./img/img_registros_casamento/rg3.png" alt="Feature Image" class="img-responsive wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.6s" />
+                                </a>
+                            </li>
+    
+                    
+                        </ul>
+                    </div>
+                </div>
                 
-                <img class="img-fluid rounded mb-5" src="./img/img_registros_casamento/rg1.png" alt="">
+                
                 <p style="font: caption;">Fonte: p. 75. Livro de Casamento 1881-1886. Paroquia de Carolina-MA.</p>
                 <br>
           
@@ -752,12 +774,37 @@
           'questao4': 'A',
           'questao5': 'B',
         }
+        let listaExplicacao = {
+          'questao1': 'História',
+          'questao2': 'Física',
+          'questao3': 'Matemática',
+          'questao4': 'Sociologia',
+          'questao5': 'Geografia',
+        }
+    
         function verificarResposta(nome, id){
           var suaReposta = document.querySelector('input[name="' + nome + '"]:checked').value;
+          let textoRes = ''
+          if (respostasCorretas[nome] == suaReposta){
+            console.log('if')
+            textoRes = (
+              <div style={{textAlign: "left", border: "2px solid #28a745"}}>
+                <strong> Sua resposta está correta | Resposta: {suaReposta} </strong>
+              </div>
+            )
+          }else{
+            console.log('else')
+            textoRes = (
+              <div style={{textAlign: "left", border: "2px solid red"}}>
+                <strong> Sua resposta está incorreta | Resposta correta {respostasCorretas[nome]} | Sua escolha: {suaReposta} </strong>
+              </div>
+            )
+          }
           let resposta = (
-            <div style={{textAlign: "left"}}>
-                <strong> Resposta correta: {respostasCorretas[nome]} | Sua resposta: {suaReposta} </strong>
-                <p>jhvdfvwelufvhwc</p>
+            <div>
+                {textoRes}
+                <p style={{textAlign: "justify"}}>{listaExplicacao[nome]}</p>
+                
             </div>
           )
           ReactDOM.render(
@@ -793,6 +840,8 @@
     
     <!-- Custom Plugin -->
     <script src="./js/custom.js"></script>
+
+    
     
   </body>
 </html>

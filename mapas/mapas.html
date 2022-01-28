@@ -2096,12 +2096,37 @@
       'questao4': 'A',
       'questao5': 'B',
     }
+    let listaExplicacao = {
+      'questao1': 'História',
+      'questao2': 'Física',
+      'questao3': 'Matemática',
+      'questao4': 'Sociologia',
+      'questao5': 'Geografia',
+    }
+
     function verificarResposta(nome, id){
       var suaReposta = document.querySelector('input[name="' + nome + '"]:checked').value;
+      let textoRes = ''
+      if (respostasCorretas[nome] == suaReposta){
+        console.log('if')
+        textoRes = (
+          <div style={{textAlign: "left", border: "2px solid #28a745"}}>
+            <strong> Sua resposta está correta | Resposta: {suaReposta} </strong>
+          </div>
+        )
+      }else{
+        console.log('else')
+        textoRes = (
+          <div style={{textAlign: "left", border: "2px solid red"}}>
+            <strong> Sua resposta está incorreta | Resposta correta {respostasCorretas[nome]} | Sua escolha: {suaReposta} </strong>
+          </div>
+        )
+      }
       let resposta = (
-        <div style={{textAlign: "left"}}>
-            <strong> Resposta correta: {respostasCorretas[nome]} | Sua resposta: {suaReposta} </strong>
-            <p>jhvdfvwelufvhwc</p>
+        <div>
+            {textoRes}
+            <p style={{textAlign: "justify"}}>{listaExplicacao[nome]}</p>
+            
         </div>
       )
       ReactDOM.render(
