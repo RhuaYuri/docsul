@@ -10,7 +10,7 @@
     <meta name="description" content="N.Agency - Responisve Landing Page for Agency">
     <meta name="keywords" content="">
     <meta name="author" content="tabthemes">
-
+    
     <link href="../css/freelancer.min.css" rel="stylesheet">
     
     <!-- Favicons -->
@@ -50,15 +50,29 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+    <script language=javascript type="text/javascript">
+      function criarPopup(){
+      newWindow = window.open ('', 'pagina');
+      newWindow.document.write ("<div class='portfolio-modal modal fade' id='portfolioModal67' tabindex='-1' role='dialog' aria-labelledby='portfolioModal67Label' aria-hidden='true'><div class='modal-dialog modal-xl' role='document'><div class='modal-content'><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'></span></button><div class='modal-body text-center'><div class='container'><div class='row justify-content-center'><div class='col-lg-8'><!-- Portfolio Modal - Title --><h2 class='portfolio-modal-title text-secondary text-uppercase mb-0'>Mapa Geográfico da Capitania do Maranhão 1818</h2><!-- Icon Divider --><div class='divider-custom'><div class='divider-custom-line'></div><div class='divider-custom-icon'></div><div class='divider-custom-line'></div></div><!-- Portfolio Modal - Image --><img class='img-fluid rounded mb-5' src='../img/img_mapas/Mapa Geográfico da Capitania do Maranhão 1818.png' alt=''><p style='font: caption;'>Fonte: None</p><br><!-- Portfolio Modal - Text --><p class='mb-5' style='text-align: justify;'>Mapa Geográfico da Capitania do Maranhão 1818</p><button class='btn btn-primary' href='#' data-dismiss='modal'>Fechar Janela</button></div></div></div></div></div></div></div>");
+      }
+      </script>
+      
+ 
   </head>
+  
   <body class="blog_index" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
     
+    <div class="portfolio-item mx-auto" onload="#portfolioModal67" data-toggle="modal" data-target="#portfolioModal67"></div>
     
     <!-- Preloader -->
     <div id="preloader">
         <div id="spinner"></div>
     </div>
     <!-- End Preloader-->
+
+    
 
     
     <!-- Start Navigation -->
@@ -107,6 +121,8 @@
 
     </header>
     <!-- End Navigation -->
+
+    <a href="javascript:criarPopup()">Criar Popup</a>
 
     <!-- Section Title Blog -->
     <div class="section-title-bg text-center m-bottom-40">
@@ -733,6 +749,52 @@
         <!-- /container -->
     </footer>
     <!-- End Footer -->
+    <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal67" tabindex="-1" role="dialog" aria-labelledby="portfolioModal67Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+             
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Mapa Geográfico da Capitania do Maranhão 1818</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                
+                <img class="img-fluid rounded mb-5" src="../img/img_mapas/Mapa Geográfico da Capitania do Maranhão 1818.png" alt="">
+                <p style="font: caption;">Fonte: None</p>
+                <br>
+          
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5" style="text-align: justify;">Mapa Geográfico da Capitania do Maranhão 1818</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  
+                  Fechar Janela
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
     <!-- Portfolio Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
@@ -1635,7 +1697,7 @@
   </div>
 
   <!-- Portfolio Modal 21 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal21" tabindex="-1" role="dialog" aria-labelledby="portfolioModal21Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" onload="vaqueiro()" id="portfolioModal21" tabindex="-1" role="dialog" aria-labelledby="portfolioModal21Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -1724,6 +1786,12 @@
     <!-- Back to top -->
     <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-angle-up"></i></a>
     <!-- /Back to top -->
+
+    <script>
+        window.onload = function vaqueiro(){
+
+        }
+    </script>
 
     
     <!-- jQuery -->
