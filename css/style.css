@@ -513,7 +513,7 @@ p {
   line-height: 1.8em;
 }
 .section-title-bg {
-  background-image: url('../img/vaqueiro/panoramica.png');
+  background-image: url('https://t1.pixers.pics/img-c676e9e9/canvas-prints-vintage-map-of-the-world-1733.jpg?H4sIAAAAAAAAA42PWW6EMAyGrwNSwM7iLBxgXucIKEAypWUTYdpRT98wrfpWqfKDF9nf7x_uS_IxQB-WI-wwj8MwBYjjlLvU7CGNn6EgbRiWTZ5OBWKu1vew9_u6FRVJVhnFNBpGVpfNh8-Hs9_fipfj2FIDkGS9jY9My6lP0M8JBHINHIFMDCTIm0Gha7dpPZa10lg5_SCsbL0tN4Zn_J9rn9xu4J3u7ICqs60QeOJ-CU-sQs6IixP9Y9IgMnOaO_ZxLrLbNW8fxet2K-EPze8a8hVcrqAInIT8AdE5ai9XRU5yS9Q67EwXo_DRSfRSC22ElkJ4blFYFeus8gVlp_-AigEAAA==');
   padding: 50px 0;
 }
 .section-subtitle {
@@ -2271,6 +2271,7 @@ display: grid;
 grid-auto-flow: column;
 grid-auto-columns: 1fr;
 }
+
 /*--------------------------------------------------
     **. Responsive {should come last}
 ---------------------------------------------------*/
