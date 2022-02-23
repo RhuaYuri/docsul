@@ -2271,6 +2271,33 @@ display: grid;
 grid-auto-flow: column;
 grid-auto-columns: 1fr;
 }
+/* Pop Up Index */
+#popup {
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 50px 2px #000;
+    padding-bottom: 5px;
+}
+
+/* Flickity-Viewport */
+.div-aqueiro {
+  background: #FAFAFA;
+}
+
+.vaqueiro-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: vaqueiro-cell;
+}
+
+
+
 
 /*--------------------------------------------------
     **. Responsive {should come last}
