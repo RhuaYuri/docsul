@@ -62,9 +62,11 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        
 </head>
 
-<body class="blog_index" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100" onload="carregar()" onresize="carregar()">
+<body class="blog_index" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100" onload="carregar()"
+    onresize="carregar()">
 
 
     <!-- Preloader -->
@@ -140,13 +142,11 @@
 
     <script type="text/babel">
         import { useState, useEffect } from "react"
-
         function carregar() {
             let isMobile = document.body.clientWidth
             var desktop = ''
             desktop = isMobile < 600 ? (
                 <div>
-
                     <section className="p-top-80 p-bottom-80">
                         <div className="container" id="mapas">
                             <div className="row">
@@ -165,20 +165,18 @@
                                     <div className="wow fadeInLeft animated"
                                         style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.8s", animationName: "fadeInLeft" }}
                                         data-wow-duration="1s" data-wow-delay="0.8s">
-                                        <p>A parte norte do Maranhão foi muito importante para a colonização da região, já que era um
-                                            polo muito importante, em contra partida, a região sul ao poucos está sendo esquecida. aqui
-                                            você conhecerá mais sobre essa região através dos documentos de Viana, Carolina e Pastos
-                                            Bons</p>
+                                        <p className="par">No ramo da historiografia, estudamos os diferentes tipos de documentos deixados para que assim possamos montar a história de um povo, civilização etc. Nesses estudos, no entanto, estão propensos a recriar apenas um lado da história ou partes dela, deixando assim, aspectos muito peculiares ao esquecimento. Quando pensamos na figura de um vaqueiro, imaginamos logo um homem branco, dono de uma fazenda que cuida do gado, e por muito tempo foi essa a imagem passada pela historiografia maranhense sobre o sul do Maranhão, onde os documentos analisados até então apenas citavam homens livres como vaqueiro como pode ser visto em Cabral (1992)</p>
+                                        <p className="par-cit">O trabalho escravo e o livre foram utilizados com frequência. Ao que parece, os escravos desempenhavam função subalterna atribuída aos fábricas. Em nenhuma fonte consultada encontramos referência a vaqueiros escravos, o que nos leva a sugerir que os vaqueiros eram sempre recrutados entre os trabalhadores livres.</p>
+                                        <p className="par">A sociedade que observamos nesses relatos mostrava uma comunidade estática, onde cada grupo social tinha sua função e que não era possível que um escravizado por exemplo, se tornasse faqueiro, no entanto, como veremos nesta página, não é apenas com essa visão que devemos olhar para a sociedade o sul do Maranhão.</p>
 
                                     </div>
                                 </div>
 
                                 <div className="col-md-6">
-
                                     <div className="feature-image">
-                                        <a href={"https://media.istockphoto.com/illustrations/cowboys-driving-wild-cattle-maremma-italy-19th-century-illustration-id1125004741"}
+                                        <a href={"./img/vaqueiro/comparacao.png"}
                                             className="pf-style lightbox-image mfp-image">
-                                            <img src={"https://media.istockphoto.com/illustrations/cowboys-driving-wild-cattle-maremma-italy-19th-century-illustration-id1125004741"}
+                                            <img src={"./img/vaqueiro/comparacao.png"}
                                                 alt="Feature Image" className="img-responsive wow fadeInRight animated"
                                                 style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInRight" }} />
                                         </a>
@@ -207,10 +205,7 @@
                                     <div className="wow fadeInLeft animated"
                                         style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.8s", animationName: "fadeInLeft" }}
                                         data-wow-duration="1s" data-wow-delay="0.8s">
-                                        <p>A parte norte do Maranhão foi muito importante para a colonização da região, já que era um
-                                            polo muito importante, em contra partida, a região sul ao poucos está sendo esquecida. aqui
-                                            você conhecerá mais sobre essa região através dos documentos de Viana, Carolina e Pastos
-                                            Bons</p>
+                                        <p className="par">Na análise da documentação do século XIX sobre a sociedade sul-maranhense, inventários e registros de batismos (ANDRADE, 2020), como por exemplo, podemos observar na venda realizada por por Justino Soares da Motta a Trajano Lino Rodrigues do escravizado João, que foi descrito como  “[...] criollo, quarenta e dois annos de idade, cazado, natural de Pastos Bons, desta Província, vaqueiro [...]” (RCVE, 1871, p.19v), nestes casos observamos a existência de um sertão mais complexo, dinâmico e mestiço não só na cor da pele, mas também nas relações que foram construídas dentro e fora das porteiras daquelas fazendas. Assim, sobre o imenso pedaço de terra localizado ao Sul de São Luís, capital da província. Nesta nova visão, aquela fugura de um homem branco, livre como vaqueiro, some e agora vemos uma sociedade mista, homens bracos, negros escravizados, trabalhando juntos para cuidar do gado.</p>
 
                                     </div>
                                 </div>
@@ -231,6 +226,89 @@
                             </div>
                         </div>
                     </section>
+
+                    <section className="p-top-80 p-bottom-80">
+                        <div className="container" id="mapas">
+                            <div className="row">
+
+                                <div className="col-md-6">
+
+                                    <div className="m-bottom-30">
+                                        <h2 className="wow fadeInLeft animated" data-wow-duration="1s"
+                                            style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInLeft" }}
+                                            data-wow-delay="0.6s">População de vaqueiros negros no sul do maranhão</h2>
+                                        <div className="divider-small wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.7s"
+                                            style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.7s", animationName: "fadeInLeft" }}>
+                                        </div>
+                                    </div>
+
+                                    <div className="wow fadeInLeft animated"
+                                        style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.8s", animationName: "fadeInLeft" }}
+                                        data-wow-duration="1s" data-wow-delay="0.8s">
+                                        <p className="par">A profissão de vaqueiro era econômica e socialmente desejada por todos que compunham o cenário das fazendas de gado espalhadas pelo interior do Brasil no processo de conquista dessas terras pelo colonizador. Para os escravizados, alcançar tal status representaria também a possibilidade de estar em um lugar privilegiado onde eles pudessem criar estratégias de luta para conquistar vantagens e direitos para si e para os seus e assim, aproveitar as frestas dentro de uma sociedade extremamente hierarquizada para criar espaços de negociação/barganha com seus/suas senhores/as. As relações com esses/as eram sempre marcadas por tensões. Ambos encenaram no palco das relações sociais sertanejas falas e movimentos que atendessem aos seus interesses</p>
+
+                                    </div>
+                                </div>
+
+                                <div className="col-md-6">
+                                    <div className="feature-image">
+                                        <a href={"./img/vaqueiro/comparacao.png"}
+                                            className="pf-style lightbox-image mfp-image">
+                                            <img src={"./img/vaqueiro/comparacao.png"}
+                                                alt="Feature Image" className="img-responsive wow fadeInRight animated"
+                                                style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInRight" }} />
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <section className="p-top-80 p-bottom-80">
+                        <div className="container" id="mapas">
+                            <div className="row">
+
+                                <div className="col-md-6">
+
+                                    <div className="m-bottom-30">
+                                        <h2 className="wow fadeInLeft animated" data-wow-duration="1s"
+                                            style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInLeft" }}
+                                            data-wow-delay="0.6s">População de vaqueiros negros no sul do maranhão</h2>
+                                        <div className="divider-small wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.7s"
+                                            style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.7s", animationName: "fadeInLeft" }}>
+                                        </div>
+                                    </div>
+
+                                    <div className="wow fadeInLeft animated"
+                                        style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.8s", animationName: "fadeInLeft" }}
+                                        data-wow-duration="1s" data-wow-delay="0.8s">
+                                        <p className="par">As relações entre os vaqueiros escravizados e seus senhores/as, poderia ser marcada por um convívio harmonioso, mas também por um convívio conturbado, como pode ser visto nos seguintes relatos.</p>
+                                        <p className="par">No caso da Dona Filomena Ribeiro da Conceição e do vaqueiro Fabrício do Nascimento Ferreira. Em um processo que Dona Filomena moveu contra seu marido, Francisco Antonio da Silva em 18/5/1877, impõe como primeira condição para que o casal entrasse em um acordo, não somente a imediata retirada do referido vaqueiro da fazenda Sam Romão, como também não dar “[...] morada a este em terras de seu cazal [...]”(Escritura de Trato e Convenção, 1877, p.134-134v).</p>
+                                        <p className="par">No entanto podemos ver outra relação harmoniosa como é o caso entre o Tenente Coronel Leonardo Pereira.</p>
+                                        <p className="par-cit">Araújo Britto e seu vaqueiro Manoel, um homem escravizado.Vejamos o que a carta de alforria de Manoel nos sugere sobre a relação que havia entre senhor e escravizado: [...] Eu Leonardo Pereira de Araújo Britto, abaixo assignado, declaro que por minha morte ou pela de minha mulher Dona Clara Britto Chaves de Araujo, ficará liberto como do ventre livre tivesse nascido, o meu escravo Manoel, mulato, com idade hoje de trinta e seis annos, mais ou menos, solteiro, vaqueiro, natural da Comarca da Imperatriz desta Provincia do Maranhão, em remuneração dos bons serviços que tem prestado; esta declaração lhe servirá de título de liberdade: Para constar, digo, para constar mandei passar o prezente que assigno. Carolina cinco de Novembro de mil oitocentos e oitenta e seis, digo oitenta e trez [...] (Registro de Liberdade Manoel, 1873, p.138v, grifos meus).</p>
+                                        <p className="par">Como foi analisado, a história do vaqueiro e do sertão maranhense é muito mais complexa do que imaginamos, observamos uma sociedade dinâmica e complexa, marcada por relações de luta, resistência por parte dos escravizados/as e também de bom convívio entre esses escravizados seus senhor(a) mas que havia também relações de conturbadas como é o caso da Dona  Filomena</p>
+
+                                    </div>
+                                </div>
+
+                                <div className="col-md-6">
+
+                                    <div className="feature-image">
+                                        <a href={"https://media.istockphoto.com/illustrations/cowboys-driving-wild-cattle-maremma-italy-19th-century-illustration-id1125004741"}
+                                            className="pf-style lightbox-image mfp-image">
+                                            <img src={"https://media.istockphoto.com/illustrations/cowboys-driving-wild-cattle-maremma-italy-19th-century-illustration-id1125004741"}
+                                                alt="Feature Image" className="img-responsive wow fadeInRight animated"
+                                                style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInRight" }} />
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             ) : (
                 <div>
@@ -252,10 +330,9 @@
                                     <div className="wow fadeInLeft animated"
                                         style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.8s", animationName: "fadeInLeft" }}
                                         data-wow-duration="1s" data-wow-delay="0.8s">
-                                        <p>A parte norte do Maranhão foi muito importante para a colonização da região, já que era um
-                                            polo muito importante, em contra partida, a região sul ao poucos está sendo esquecida. aqui
-                                            você conhecerá mais sobre essa região através dos documentos de Viana, Carolina e Pastos
-                                            Bons</p>
+                                        <p className="par">No ramo da historiografia, estudamos os diferentes tipos de documentos deixados para que assim possamos montar a história de um povo, civilização etc. Nesses estudos, no entanto, estão propensos a recriar apenas um lado da história ou partes dela, deixando assim, aspectos muito peculiares ao esquecimento. Quando pensamos na figura de um vaqueiro, imaginamos logo um homem branco, dono de uma fazenda que cuida do gado, e por muito tempo foi essa a imagem passada pela historiografia maranhense sobre o sul do Maranhão, onde os documentos analisados até então apenas citavam homens livres como vaqueiro como pode ser visto em Cabral (1992)</p>
+                                        <p className="par-cit">O trabalho escravo e o livre foram utilizados com frequência. Ao que parece, os escravos desempenhavam função subalterna atribuída aos fábricas. Em nenhuma fonte consultada encontramos referência a vaqueiros escravos, o que nos leva a sugerir que os vaqueiros eram sempre recrutados entre os trabalhadores livres.</p>
+                                        <p className="par">A sociedade que observamos nesses relatos mostrava uma comunidade estática, onde cada grupo social tinha sua função e que não era possível que um escravizado por exemplo, se tornasse faqueiro, no entanto, como veremos nesta página, não é apenas com essa visão que devemos olhar para a sociedade o sul do Maranhão.</p>
 
                                     </div>
                                 </div>
@@ -263,9 +340,9 @@
                                 <div className="col-md-6">
 
                                     <div className="feature-image">
-                                        <a href={"https://media.istockphoto.com/illustrations/cowboys-driving-wild-cattle-maremma-italy-19th-century-illustration-id1125004741"}
+                                        <a href={"#"}
                                             className="pf-style lightbox-image mfp-image">
-                                            <img src={"https://media.istockphoto.com/illustrations/cowboys-driving-wild-cattle-maremma-italy-19th-century-illustration-id1125004741"}
+                                            <img src={"./img/vaqueiro/comparacao.png"}
                                                 alt="Feature Image" className="img-responsive wow fadeInRight animated"
                                                 style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInRight" }} />
                                         </a>
@@ -307,10 +384,7 @@
                                     <div className="wow fadeInLeft animated"
                                         style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.8s", animationName: "fadeInLeft" }}
                                         data-wow-duration="1s" data-wow-delay="0.8s">
-                                        <p>A parte norte do Maranhão foi muito importante para a colonização da região, já que era um
-                                            polo muito importante, em contra partida, a região sul ao poucos está sendo esquecida. aqui
-                                            você conhecerá mais sobre essa região através dos documentos de Viana, Carolina e Pastos
-                                            Bons</p>
+                                        <p className="par">Na análise da documentação do século XIX sobre a sociedade sul-maranhense, inventários e registros de batismos (ANDRADE, 2020), como por exemplo, podemos observar na venda realizada por por Justino Soares da Motta a Trajano Lino Rodrigues do escravizado João, que foi descrito como  “[...] criollo, quarenta e dois annos de idade, cazado, natural de Pastos Bons, desta Província, vaqueiro [...]” (RCVE, 1871, p.19v), nestes casos observamos a existência de um sertão mais complexo, dinâmico e mestiço não só na cor da pele, mas também nas relações que foram construídas dentro e fora das porteiras daquelas fazendas. Assim, sobre o imenso pedaço de terra localizado ao Sul de São Luís, capital da província. Nesta nova visão, aquela fugura de um homem branco, livre como vaqueiro, some e agora vemos uma sociedade mista, homens bracos, negros escravizados, trabalhando juntos para cuidar do gado.</p>
 
                                     </div>
                                 </div>
@@ -318,7 +392,90 @@
                             </div>
                         </div>
                     </section>
-   
+
+                    <section className="p-top-80 p-bottom-80">
+                        <div className="container" id="mapas">
+                            <div className="row">
+
+                                <div className="col-md-6">
+
+                                    <div className="m-bottom-30">
+                                        <h2 className="wow fadeInLeft animated" data-wow-duration="1s"
+                                            style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInLeft" }}
+                                            data-wow-delay="0.6s">População de vaqueiros negros no sul do maranhão</h2>
+                                        <div className="divider-small wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.7s"
+                                            style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.7s", animationName: "fadeInLeft" }}>
+                                        </div>
+                                    </div>
+
+                                    <div className="wow fadeInLeft animated"
+                                        style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.8s", animationName: "fadeInLeft" }}
+                                        data-wow-duration="1s" data-wow-delay="0.8s">
+                                        <p className="par">A profissão de vaqueiro era econômica e socialmente desejada por todos que compunham o cenário das fazendas de gado espalhadas pelo interior do Brasil no processo de conquista dessas terras pelo colonizador. Para os escravizados, alcançar tal status representaria também a possibilidade de estar em um lugar privilegiado onde eles pudessem criar estratégias de luta para conquistar vantagens e direitos para si e para os seus e assim, aproveitar as frestas dentro de uma sociedade extremamente hierarquizada para criar espaços de negociação/barganha com seus/suas senhores/as. As relações com esses/as eram sempre marcadas por tensões. Ambos encenaram no palco das relações sociais sertanejas falas e movimentos que atendessem aos seus interesses</p>
+
+                                    </div>
+                                </div>
+
+                                <div className="col-md-6">
+
+                                    <div className="feature-image">
+                                        <a href={"#"}
+                                            className="pf-style lightbox-image mfp-image">
+                                            <img src={"./img/vaqueiro/comparacao.png"}
+                                                alt="Feature Image" className="img-responsive wow fadeInRight animated"
+                                                style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInRight" }} />
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="p-top-80 p-bottom-80">
+                        <div className="container" id="mapas">
+                            <div className="row">
+                                <div className="col-md-6">
+
+                                    <div className="feature-image">
+                                        <a href={"https://media.istockphoto.com/illustrations/cowboys-driving-wild-cattle-maremma-italy-19th-century-illustration-id1125004741"}
+                                            className="pf-style lightbox-image mfp-image">
+                                            <img src={"https://media.istockphoto.com/illustrations/cowboys-driving-wild-cattle-maremma-italy-19th-century-illustration-id1125004741"}
+                                                alt="Feature Image" className="img-responsive wow fadeInRight animated"
+                                                style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInRight" }} />
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div className="col-md-6">
+
+                                    <div className="m-bottom-30">
+                                        <h2 className="wow fadeInLeft animated" data-wow-duration="1s"
+                                            style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInLeft" }}
+                                            data-wow-delay="0.6s">População de vaqueiros negros no sul do maranhão</h2>
+                                        <div className="divider-small wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.7s"
+                                            style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.7s", animationName: "fadeInLeft" }}>
+                                        </div>
+                                    </div>
+
+                                    <div className="wow fadeInLeft animated"
+                                        style={{ color: "black", visibility: "visible", animationDuration: "1s", animationDelay: "0.8s", animationName: "fadeInLeft" }}
+                                        data-wow-duration="1s" data-wow-delay="0.8s">
+                                        <p className="par">As relações entre os vaqueiros escravizados e seus senhores/as, poderia ser marcada por um convívio harmonioso, mas também por um convívio conturbado, como pode ser visto nos seguintes relatos.</p>
+                                        <p className="par">No caso da Dona Filomena Ribeiro da Conceição e do vaqueiro Fabrício do Nascimento Ferreira. Em um processo que Dona Filomena moveu contra seu marido, Francisco Antonio da Silva em 18/5/1877, impõe como primeira condição para que o casal entrasse em um acordo, não somente a imediata retirada do referido vaqueiro da fazenda Sam Romão, como também não dar “[...] morada a este em terras de seu cazal [...]”(Escritura de Trato e Convenção, 1877, p.134-134v).</p>
+                                        <p className="par">No entanto podemos ver outra relação harmoniosa como é o caso entre o Tenente Coronel Leonardo Pereira.</p>
+                                        <p className="par-cit">Araújo Britto e seu vaqueiro Manoel, um homem escravizado.Vejamos o que a carta de alforria de Manoel nos sugere sobre a relação que havia entre senhor e escravizado: [...] Eu Leonardo Pereira de Araújo Britto, abaixo assignado, declaro que por minha morte ou pela de minha mulher Dona Clara Britto Chaves de Araujo, ficará liberto como do ventre livre tivesse nascido, o meu escravo Manoel, mulato, com idade hoje de trinta e seis annos, mais ou menos, solteiro, vaqueiro, natural da Comarca da Imperatriz desta Provincia do Maranhão, em remuneração dos bons serviços que tem prestado; esta declaração lhe servirá de título de liberdade: Para constar, digo, para constar mandei passar o prezente que assigno. Carolina cinco de Novembro de mil oitocentos e oitenta e seis, digo oitenta e trez [...] (Registro de Liberdade Manoel, 1873, p.138v, grifos meus).</p>
+                                        <p className="par">Como foi analisado, a história do vaqueiro e do sertão maranhense é muito mais complexa do que imaginamos, observamos uma sociedade dinâmica e complexa, marcada por relações de luta, resistência por parte dos escravizados/as e também de bom convívio entre esses escravizados seus senhor(a) mas que havia também relações de conturbadas como é o caso da Dona  Filomena</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             )
 
