@@ -878,7 +878,7 @@ blockquote {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .nav-transparent .navbar .navigation {
-  background-color: transparent;
+  background-color: #000000b5;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -891,7 +891,7 @@ blockquote {
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
+  background-color: #000000b5;
 }
 .nav-transparent .navbar-default .navbar-nav > li > a {
   color: #fff;
