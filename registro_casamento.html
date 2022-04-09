@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Registros de Casamento - DocSul</title>
+    <title>Justino Alberto Lima, Amancia Pereira de Miranda, Luiz e Ignez da Cunha Ribeiro. - DocSul</title>
 
     <meta name="description" content="N.Agency - Responisve Landing Page for Agency">
     <meta name="keywords" content="">
@@ -137,11 +137,12 @@
                             <div class="collapse navbar-collapse" id="navbar-collapse">
 
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="index.html#home">Home</a></li>
-                                    <li><a href="index.html#service">Descrição</a></li>
-                                    <li><a href="index.html#portfolio">Pesquisa</a></li>
-                                    <li><a href="index.html#team">Pesquisadores</a></li>
-                                    <li><a href="index.html#contact">Contato</a></li>
+                                    <li><a data-scroll href="#home">início</a></li>
+                                    <li><a data-scroll href="#texto">Pesquisa</a></li>
+                                    <li><a data-scroll href="#transcrito">documento transcrito</a></li>
+                                    <li><a data-scroll href="#questoes">Atividade</a></li>
+                                    <li><a data-scroll href="#referencia">Referência</a></li>
+                                    <li><a data-scroll href="#comentario">Comentário</a></li>
                                 </ul>
 
                             </div>
@@ -158,7 +159,7 @@
 
 
     <!--BLog single section-->
-    <section id="blog-single" class="p-top-80 p-bottom-80">
+    <section  class="p-top-80 p-bottom-80">
 
         <!--Container-->
         <div class="container clearfix">
@@ -182,19 +183,12 @@
 
                         <div class="postMeta clearfix">
                             <div class="postMeta-info">
-                                <span class="metaAuthor"><i class="fa fa-user"></i> <a href="#">Admin</a></span>
-                                <span class="metaCategory"><i class="fa fa-folder"></i> <a href="#">Research</a></span>
-                                <span class="metaComment"><i class="fa fa-comments"></i> <a href="#">3
-                                        comments</a></span>
-                            </div>
-                            <div class="postMeta-date">
-                                <span class="metaDate"><i class="fa fa-calendar"></i> <a href="#">12 January
-                                        2017</a></span>
+                                <span class="metaAuthor"><i class="fa fa-user"></i>Autor: <a href="https://www.instagram.com/fferreira1550/" target="_blank">Felipe Ferreira</a></span>
                             </div>
                         </div>
                         <!--Post meta-->
 
-                        <div class="postTitle">
+                        <div id="texto" class="postTitle">
                             <h1>RELAÇÕES DE SOCIABILIDADE A PARTIR DOS CASAMENTOS MISTOS ENTRE LIVRES E ESCRAVIZADOS/AS NA CIDADE DE CAROLINA- MA DO SÉCULO XIX.</h1>
                             <div class="divider-small"></div>
                         </div>
@@ -223,7 +217,7 @@
 
 
                     </div>
-                    <div class="container">
+                    <div id="transcrito" class="container">
                         <div class="row">
                             <!-- === Blog item 1 === -->
                             <div class="col-sm-6" data-wow-duration="1s" data-wow-delay="0.7s">
@@ -322,7 +316,7 @@
                     <div class="widget">
                         <h4>Outros conteúdos</h4>
                         <ul class="cat-list">
-                            <li><a href="./professor.html#casamento">Área dos Professores</a></li>
+                            <li><a href="./professor.html#casamento">Área dos/as Professores/as</a></li>
                         </ul>
                     </div>
                     <!--End widget-->
@@ -341,6 +335,7 @@
                     </div>
                     <!--End widget-->
                 </div> <!-- /.col -->
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
                 <!--Start Questões-->
                 <section id="questoes" class="p-top-80 p-bottom-80">
@@ -349,44 +344,52 @@
                             <div class="estiloClass">
                                 <h1 style="text-align: center;">Vamos às questões!</h1>
                                 <h3 style="text-align: center; font-weight: bold; color: #6a0b07;">Atenção: Volte ao texto introdutório e aos documentos sempre que precisar.</h3>
+                                <div class="chamadaExercicio" id="q1">Preencha o formulário com suas informações</div>
+                                <form class="w3-container">
+                                    <label class="w3-text-teal"><b>Nome</b></label>
+                                    <input class="w3-input w3-border w3-light-grey" type="text">
+                                    <label class="w3-text-teal"><b>E-mail</b></label>
+                                    <input class="w3-input w3-border w3-light-grey" type="mail">
+                                </form>
+                                <div>
+                                    <div>
+                                        <br>
+                                        
+                                    </div>
+                                </div>
                                 <!--Questão 1-->
                                 <div class="chamadaExercicio" id="q1">Questão 1</div>
                                 <p></p>
                                 <p style="text-align: justify"><strong>Questão 1 -</strong> O casamento católico não alterava a condição social e jurídica que os homens e as mulheres escravizados/as já viviam. Eles/as não se tornariam livres após o matrimônio. Assim, o que teria levado Luiz e Amancia, ambos escravizado/a, a oficializarem suas relações diante de um padre?</p>
-                                
-
-                                <div style="text-align: right">
-                                    <div id="campoResposta1"></div>
-                                    <button class="button"
-                                        onclick="verificarResposta('questao1', 'campoResposta1')">Verifica
-                                        Respostas</button>
-                                </div>
+                                <form class="w3-container">
+                                    <label class="w3-text-teal"><b>Resposta</b></label>
+                                    <textarea style="height: 100px !important;"class="w3-input w3-border w3-light-grey"  cols="30" rows="5"></textarea>
+                                </form>
+                                <br>
                                 <!--End Questão 1-->
 
                                 <!--Questão 2-->
                                 <div class="chamadaExercicio">Questão 2</div>
                                 <p></p>
                                 <p style="text-align: justify"><strong>Questão 2 -</strong> Os casamentos realizados entre Justino Alberto Lima, filho de uma índia, e Amancia Pereira de Miranda, escravizada, e entre Luiz, escravizado, e Ignez da Cunha Ribeiro, uma pessoa livre, deram uma maior complexidade aos vínculos construídos nos sertões sul-maranhenses. A partir do que você leu, formule hipóteses sobre os motivos que levaram Justino Alberto Lima e Ignez da Cunha Ribeiro, pessoas livres, a casarem-se com um/a escravizado/a?</p>
-                                
-                                <div style="text-align: right">
-                                    <div id="campoResposta2"></div>
-                                    <button class="button"
-                                        onclick="verificarResposta('questao2', 'campoResposta2')">Verifica
-                                        Respostas</button>
-                                </div>
+                                <form class="w3-container">
+                                    <label class="w3-text-teal"><b>Resposta</b></label>
+                                    <textarea style="height: 100px !important;"class="w3-input w3-border w3-light-grey"  cols="30" rows="5"></textarea>
+                                </form>
+                                <br>
+
                                 <!--End Questão 2-->
 
                                 <!--Questão 3-->
                                 <div class="chamadaExercicio">Questão 3</div>
                                 <p></p>
                                 <p style="text-align: justify"><strong>Questão 3 -</strong> Os casos acima não eram a regra. Raramente as mulheres escravizadas dos sertões sul-maranhenses tinham suas uniões abençoadas pela Igreja Católica, mas isso não significa dizer que elas, como nos lembra Falci (2004. p. 220) “[...] não houvessem constituído laços sociais familiares, que não tivessem tido oportunidade de ter um companheiro estável, uma relação afetiva duradoura ou mesmo um companheiro temporário”. E você, mora com seu pai e com sua mãe? Quantas pessoas moram com você? São seus parentes (tios(as), avôs(ós), primos(as), sobrinhos(as), padrinho/madrinha...)?</p>
+                                <form class="w3-container">
+                                    <label class="w3-text-teal"><b>Resposta</b></label>
+                                    <textarea style="height: 100px !important;"class="w3-input w3-border w3-light-grey"  cols="30" rows="5"></textarea>
+                                </form>
+                                <br>
                                 
-                                <div style="text-align: right">
-                                    <div id="campoResposta3"></div>
-                                    <button class="button"
-                                        onclick="verificarResposta('questao3', 'campoResposta3')">Verifica
-                                        Respostas</button>
-                                </div>
                                 <!--End Questão 3-->
 
                                 <!--Questão 4-->
@@ -404,17 +407,17 @@
                                                 <label for="obj_3059_0">
                                                     <p style="text-align: justify;">Você concorda com essa definição de família oferecida pela constituição brasileira? Justifique sua resposta.</p>
                                                 </label>
+                                                <form class="w3-container">
+                                                    <label class="w3-text-teal"><b>Resposta</b></label>
+                                                    <textarea style="height: 100px !important;"class="w3-input w3-border w3-light-grey"  cols="30" rows="5"></textarea>
+                                                </form>
+                                                <br>
                                             </td>
                                         </tr>
                                         
                                     </tbody>
                                 </table>
-                                <div style="text-align: right">
-                                    <div id="campoResposta4"></div>
-                                    <button class="button"
-                                        onclick="verificarResposta('questao4', 'campoResposta4')">Verifica
-                                        Respostas</button>
-                                </div>
+
                                 <!--End Questão 4-->
 
                                 <!--Questão 5-->
@@ -432,6 +435,10 @@
                                                 <label for="obj_3059_0">
                                                     <p style="text-align: justify">Como você explicaria a não aprovação dessa lei? Quais diferenças você percebe entre o conceito de família apresentado pela Constituição Federal e aquele trazido pela lei proposta por Orlando Silva? Você concorda com ele? Por quê?</p>
                                                 </label>
+                                                <form class="w3-container">
+                                                    <label class="w3-text-teal"><b>Resposta</b></label>
+                                                    <textarea style="height: 100px !important;"class="w3-input w3-border w3-light-grey"  cols="30" rows="5"></textarea>
+                                                </form>
                                             </td>
                                         </tr>
                                         <tr class="estiloTr">
@@ -442,6 +449,10 @@
                                                 <label for="obj_3059_0">
                                                     <p style="text-align: justify">A realidade vivenciada pelas famílias mistas envolvendo pessoas escravizadas se aproxima mais de qual desses modelos? Explique.</p>
                                                 </label>
+                                                <form class="w3-container">
+                                                    <label class="w3-text-teal"><b>Resposta</b></label>
+                                                    <textarea style="height: 100px !important;"class="w3-input w3-border w3-light-grey"  cols="30" rows="5"></textarea>
+                                                </form>
                                             </td>
                                         </tr>
                                         <tr class="estiloTr">
@@ -459,20 +470,23 @@
                                                     <p class="par-cit">referência: <a href="https://piaui.folha.uol.com.br/lupa/2019/08/21/verificamos-projeto-casamento-pais-filhos/" target="_blank">https://piaui.folha.uol.com.br/lupa/2019/08/21/verificamos-projeto-casamento-pais-filhos/.</a></p>
                                                     <p class="par"><strong>A disseminação de fake news sobre a proposta acima foi um dos principais meios utilizados para que esta não fosse aprovada. Qual sua opinião sobre as fake news? E como elas afetam nosso cotidano?</strong></p>
                                                 </label>
+                                                <form class="w3-container">
+                                                    <label class="w3-text-teal"><b>Resposta</b></label>
+                                                    <textarea style="height: 100px !important;"class="w3-input w3-border w3-light-grey"  cols="30" rows="5"></textarea>
+                                                </form>
+                                                <br>
                                             </td>
                                         </tr>
-                                        
                                     </tbody>
                                 </table>
-                                <div style="text-align: right">
-                                    <div id="campoResposta5"></div>
-                                    <button class="button"
-                                        onclick="verificarResposta('questao5', 'campoResposta5')">Verifica
-                                        Respostas</button>
-                                </div>
                                 <!--End Questão 5-->
 
                                 <div class="chamadaExercicio"></div>
+                                <div style="text-align: center">
+                                    <div id="campoResposta5"></div>
+                                    <button class="button"
+                                        onclick="verificarResposta('questao5', 'campoResposta5')">Enviar Resposta</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -485,8 +499,8 @@
 
     </section>
     <!--End blog single section-->
-     <section>
-        <div class="container clearfix">
+     <section id="referencia">
+        <div  class="container clearfix">
              <div>
                     <div class="divider-small"></div>
                 </div>
