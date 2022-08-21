@@ -2357,6 +2357,17 @@ grid-auto-columns: 1fr;
   font-weight: bold;
  }
 
+ /*Mesma linha*/
+ .mesmaLinha{
+  float:left;
+}
+
+
+.tamanho {
+  width: 80%;
+}
+
+
 
 
 
