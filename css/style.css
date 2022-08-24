@@ -2359,12 +2359,17 @@ grid-auto-columns: 1fr;
 
  /*Mesma linha*/
  .mesmaLinha{
-  float:left;
+  float:left !important;
 }
 
 
 .tamanho {
-  width: 80%;
+  width: 80% !important;
+}
+
+.rolagem {
+  height: 500px;
+  overflow-y: scroll;
 }
 
 
