@@ -145,8 +145,8 @@
 
         <!-- Section Title Blog -->
         <div class="section-title-bg text-center m-bottom-40" style="margin: 0px">
-            <h1 class="wow fadeInDown no-margin" style="color: white;" data-wow-duration="1s" data-wow-delay="0.6s">.</h1>
-            <div class="divider-center-small wow zoomIn" data-wow-duration="1s" data-wow-delay="0.6s"></div>
+            <h1 class="wow fadeInDown no-margin" style="color: white;" data-wow-duration="1s" data-wow-delay="0.6s">&nbsp;</h1>
+            <h1 class="wow fadeInDown no-margin" style="color: white;" data-wow-duration="1s" data-wow-delay="0.6s">&nbsp;</h1>
             <!--<p class="section-subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">We write quality content regularly. check them out!</p>-->
             
         </div>
@@ -159,14 +159,24 @@
             style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: zoomIn;"></div>
             
     </section>
+    
+    
 
 
     <section id="vaqueiro" class="p-top-80 p-bottom-40">
         <div class="container">
+            <div>
+                <audio style="width: 50%;" controls>
+                    <source src="horse.ogg" type="audio/ogg" >
+                    <source src="./audio/vaqueiro/teste_audio.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+            </div>
             <div class="row">
                                
 
                 <div class="col-md-6">
+                    
                     <!-- Section Title -->
                     <div class="m-bottom-30">
                         <h2 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.6s">Homens vaqueiros e escravizados nos sertões de Pastos Bons</h2>
@@ -330,7 +340,7 @@
                                                             <form class="w3-container">
                                                                 <p class="par mesmaLinha">06ª Saibão quantos este
                                                                     publico...</p>
-                                                                <input style="height: 20px !important;"
+                                                                <input id="line6" style="height: 20px !important;"
                                                                     class="tamanho w3-input w3-border w3-light-grey"
                                                                     cols="2" rows="1"></input>
                                                                 <br>
@@ -1056,7 +1066,7 @@
                             <div class="col-md-6" style="text-align: right">
                                 <div id="campoResposta1"></div>
                                 <button class="button"
-                                    onclick="verificarResposta('questao1', 'campoResposta1')">Verifica
+                                    onclick="analisarTexto()">Verifica
                                     Respostas</button>
                             </div>
                         </div>
@@ -1383,6 +1393,7 @@
 
     <!-- jQuery -->
     <!-- Custom scripts for this template -->
+    <script src="./js/analisar-texto.js"></script>
     <script src="./vendor/freelancer.min.js"></script>
     <script src="./vendor/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.min.js"></script>
