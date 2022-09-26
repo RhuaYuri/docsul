@@ -18,33 +18,39 @@ texto = [
     'quartorze da matricula e trez da relação apresentada em',//29
     'dezenove de Junho de mil oitocentos setenta e dois, perten',//30
     'de, n aquelle tempo, solteiro, filho de Maria, vaqueiro',//32
-    'e sete - O Collector Joaquim Antonio Nogueira',//36
-    'dor que o escravo a cima referido se acha quite do impos',//46
-    'to de treze annual como do conhecimento seguinte',//47
-    'vo - Recebido do Capitão João Baptista Mascarenhas',//51
-    'mil – Em trinta de Maio de mil oitocentos setenta e',//55
-    'sete – O Collector, Nogueira – Disse ainda, que pelo',//56
-    'presente instrumento vende, como de facto vendido tem o',//57
+
+
+
+    'e sete – O Collector Joaquim Antonio Nogueira – Estava',//36
+    'se acha quite do impos',//46
+    'to da taxa annual, como do conhecimento',//47
+    'Recebido do Capitão João Baptista Mascarenhas',//51
+    'Em trinta de Maio de mil oitocentos setenta e',//55
+    'Disse ainda, que pelo',//56
+    'prezente instrumento vende, como de facto vendido tem o',//57
     'escravo acima referido à Dona Juliana Moreira Perei',//58
-    'ra, pela quantia de oitocentos mil reis moeda correnta',//59
-    'que meste acto recebeu, pelo que dá a compradora plena e',//60
+    'ra, pela quantia de oitocentos mil reis moeda corrente',//59
+    'que neste acto recebeu, pelo que dá a compradora plena e',//60
     'geral quitação de paga, e lhe transfere toda a posse, jus e do',//61
-    'minio que no mesmo escravo tenha, para que o possa',//62
-    'dispor como sue que desde já fica sendo, pois ao assigna',//63
+    'minio que no mesmo escravo tinha, para que o possa',//62
+    'dispor como seu que desde já fica sendo, pois ao assigna',//63
     'rem este contracto fica logo amparada dele: assim',//64
-    'sempre bôa, de paz, firme. Valeria tanto em juiso como',//66
-    'compradora Dona Juliana Moreira Pereira foi dito',//68
+    'sempre bôa, de paz, firme',//66
+    'Dona Juliana Moreira Pereira foi dito',//68
     'que aceita a presente escriptura, sempre, digo, escriptura',//69
-    'nos termos expressado; e me presentou o conhecimen',//70
-    '[ilegível] e de taxa annul, ficão também [ilegível]',//75
-    'cartorio, e bem assim uma estupilha do valor de oito con',//76
+    'nos termos expressados; e me apresentou o conhecimen',//70
+
+
+
+    'com o da taxa annual, ficão também archivados no meo',//75
+    'cartorio, e bem assim uma estampilha do valor de oito cen',//76
     'tos reis, proporcional ao mesmo contracto que vai no',//77
-    'fim deste instrumento devidamente inutilizado [ilegível]',//78
-    '[ilegível], ouvirão ler e assigna o vendedor fazendo. E',//79
-    'rogo da compradora por declarara não saber escrever al',//80
-    'feres Herminio Ayres da Silva, com as testemunhas a este',//81
-    'acto presente - Capitão Benedicto Montriel e Alferes Joa',//82
-    'quim Antonio Nogueira, que também são reconhecidos',//83
+    'fim deste instrumento devidamente inutillizado Assim',//78
+    'a disporão, ouvirão ler e assigna o vendedor fazendo à',//79
+    'por declarar não saber escrever',//80
+    'com as testemunhas a este',//81
+    'acto presente',//82
+    'que também são reconhecidos',//83
     'que o escrevy por me ser pedido'//85
 ]
 

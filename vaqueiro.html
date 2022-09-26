@@ -38,6 +38,8 @@
     <!-- Bootstrap CSS -->
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+
 
 
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
@@ -320,7 +322,7 @@
 
                     <div class="container" id="exercicio">
                         <div class="row">
-                            <section>
+                            <section >
 
                                 <div style="text-align: center;">
                                     <!-- Flickity HTML init -->
@@ -328,34 +330,35 @@
                                         <div class="vaqueiro-cell">
                                             <div class="container">
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div id="questao001" class="col-md-6">
                                                         <!-- Section Title -->
                                                         <div class="m-bottom-30">
                                                             <h2 class="wow" style="color: black;" data-wow-delay="0.6s">
-                                                                escravizado João</h2>
+                                                                escravizado Francisco</h2>
                                                             <div class="divider-small wow" data-wow-delay="0.7s"></div>
                                                         </div>
+                                                        
 
 
 
 
                                                         <div class="wow rolagem" style="color: black;"
                                                             data-wow-delay="0.8s">
-                                                            <p class="par">01ª Escriptura de venda e compra de escravo
+                                                            <p id="download1" class="par">01ª Escriptura de venda e compra de escravo
                                                                 de nome Francisco, cabra
                                                             </p>
-                                                            <p class="par">02ª com idade hoje de trinta e quatro annos,
+                                                            <p id="download2" class="par">02ª com idade hoje de trinta e quatro annos,
                                                                 solteiro, vaqueiro,</p>
-                                                            <p class="par">03ª natural deste Termo, que faz o Capitão
+                                                            <p id="download3" class="par">03ª natural deste Termo, que faz o Capitão
                                                                 Baptista Mas-</p>
-                                                            <p class="par">04ª carenhas à Dona Juliana Moreira Pereira,
+                                                            <p id="download4" class="par">04ª carenhas à Dona Juliana Moreira Pereira,
                                                                 pela quantia </p>
-                                                            <p class="par">05ª de oitocentos mil reis.</p>
+                                                            <p id="download5" class="par">05ª de oitocentos mil reis.</p>
                                                             <form class="w3-container">
-                                                                <p class="par">06ª Saibão quantos este
+                                                                <p id="download6" class="par">06ª Saibão quantos este
                                                                     publico...</p>
                                                                 <div class="mesmaLinha" id="re6"></div>
-                                                                <input type="text" id="line6"
+                                                                <input id="download06" type="text" id="line6"
                                                                     style="height: 20px !important;"
                                                                     class="tamanho w3-input w3-border w3-light-grey"
                                                                     cols="2" rows="1"></input>
@@ -418,12 +421,12 @@
                                                                     style="height: 20px !important;"
                                                                     class="mesmaLinha tamanho w3-input w3-border w3-light-grey"
                                                                     cols="2" rows="1"></input>
-                                                                <p class="par">: de uma como vendedor o Capitão Baptista
+                                                                <p id="download12" class="par">: de uma como vendedor o Capitão Baptista
                                                                 </p>
-                                                                <p class="par">13ª Mascarenhas, morador no lugar Sam
+                                                                <p id="download13" class="par">13ª Mascarenhas, morador no lugar Sam
                                                                     Jose deste Termo, e de ou
                                                                 </p>
-                                                                <p class="par">14ª tra como compradora – Dona Juliana
+                                                                <p id="download14" class="par">14ª tra como compradora – Dona Juliana
                                                                     Moreira Pereira residen
                                                                 </p>
                                                                 <br>
@@ -447,20 +450,20 @@
                                                                     style="height: 20px !important;"
                                                                     class="mesmaLinha tamanho w3-input w3-border w3-light-grey"
                                                                     cols="2" rows="1"></input>
-                                                                <p class="par">; e perante as testemunhas infra
+                                                                <p id="download16" class="par">; e perante as testemunhas infra
                                                                     nome</p>
                                                             </form>
 
                                                             <form class="w3-container">
-                                                                <p class="par">17ª adas e assignadas me foi dito pelo
+                                                                <p id="download17" class="par">17ª adas e assignadas me foi dito pelo
                                                                     vendedor capitão João</p>
                                                             </form>
                                                             <form class="w3-container">
-                                                                <p class="par">18ª Baptista Mascarenhas que ele é senhor
+                                                                <p id="download18" class="par">18ª Baptista Mascarenhas que ele é senhor
                                                                     e possuidor em man</p>
                                                             </form>
                                                             <form class="w3-container">
-                                                                <p class="par">19ª sa e passifica posse de
+                                                                <p id="download19" class="par">19ª sa e passifica posse de
                                                                 </p>
                                                                 <div class="mesmaLinha" id="re19"></div>
                                                                 <input type="text" id="line19"
@@ -485,16 +488,16 @@
                                                                 <input type="text" style="height: 20px !important;"
                                                                     class="mesmaLinha tamanho w3-input w3-border w3-light-grey"
                                                                     cols="2" rows="1"></input>
-                                                                <p class="par">, que foi matriculado na collecto </p>
+                                                                <p id="download21" class="par">, que foi matriculado na collecto </p>
                                                             </form>
 
                                                             <form class="w3-container">
-                                                                <p class="par">22ª ria deste Municipio como se vê da
+                                                                <p id="download22" class="par">22ª ria deste Municipio como se vê da
                                                                     certidão do theor seguinte:
                                                                 </p>
                                                             </form>
                                                             <form class="w3-container">
-                                                                <p class="par">23ª Joaquim Antonio Nogueira, Collector
+                                                                <p id="download23" class="par">23ª Joaquim Antonio Nogueira, Collector
                                                                     das rendas geraes</p>
                                                             </form>
                                                             <form class="w3-container">
@@ -522,7 +525,7 @@
                                                                     cols="2" rows="1"></input>
                                                             </form>
                                                             <form class="w3-container">
-                                                                <p class="par">27ª do livro, verifiquei achar-se
+                                                                <p id="download27" class="par">27ª do livro, verifiquei achar-se
                                                                     maticulado sob os números</p>
                                                             </form>
                                                             <form class="w3-container">
@@ -550,7 +553,7 @@
                                                                     cols="2" rows="1"></input>
                                                             </form>
                                                             <form class="w3-container">
-                                                                <p class="par">31ª nome Francisco, cabra, de vinte e
+                                                                <p id="download31" class="par">31ª nome Francisco, cabra, de vinte e
                                                                     nove annos de ida</p>
                                                             </form>
                                                             <form class="w3-container">
@@ -560,10 +563,10 @@
                                                                     style="height: 20px !important;"
                                                                     class=" mesmaLinha tamanho w3-input w3-border w3-light-grey"
                                                                     cols="2" rows="1"></input>
-                                                                <p class="par mesmaLinha">. É</p>
+                                                                <p id="download32" class="par mesmaLinha">. É</p>
                                                             </form>
                                                             <form class="w3-container">
-                                                                <p class="par mesmaLinha">33ª que se continha
+                                                                <p id="download33" class="par mesmaLinha">33ª que se continha
                                                                     relativamente ao mencionado
                                                                     escravo</p>
                                                             </form>
@@ -600,47 +603,44 @@
                                                 <!-- Section Title -->
                                                 <div class="m-bottom-30">
                                                     <h2 class="wow" style="color: black;" data-wow-delay="0.6s">
-                                                        escravizado João</h2>
+                                                        escravizado Francisco</h2>
                                                     <div class="divider-small wow" data-wow-delay="0.7s"></div>
                                                 </div>
                                                 <div class="wow rolagem" style="color: black;" data-wow-delay="0.8s">
-                                                    <p class="par">34ª [ilegível] Collectoria das rendas geraes da</p>
-
-                                                    <p class="par">35ª cidade de Carolina, trinta de Maio de mil
-                                                        oitocentos setenta</p>
-
+                                                    <p id="download34" class="par">34ª cujo livro me reporto, Collectoria das rendas geraes da </p>
+                                                    <p id="download35" class="par">35ª cidade de Carolina, trinta de Maio de mil oitocentos setenta</p>
 
                                                     <form class="w3-container">
-                                                        <p class="par">36ª - &nbsp;</p>
-                                                         <div class="mesmaLinha" id="re36"></div>
+                                                        <p id="download36" class="par">36ª - &nbsp;</p>
+                                                        <div class="mesmaLinha" id="re36"></div>
                                                         <input type="text" id="line36" style="height: 20px !important;"
                                                             class="tamanho mesmaLinha w3-input w3-border w3-light-grey"
                                                             cols="2" rows="1"></input>
-                                                        <p class="par"> [ilegível]</p>
                                                         <br>
                                                     </form>
-                                                    <p class="par">37ª [ilegível] estampilha do sello de [ilegível] do
-                                                        valor de dezoito</p>
-                                                    <p class="par">>[ilegível]</p>
-                                                    <p class="par">38ª devidamente matriculado a [ilegível], dous mil
+
+
+                                                    
+                                                    <p id="download37" class="par">37ª sem a estampilha do sello de adhesivo do valor de duzentos reis</p>
+                                                    <p id="downloadilegíve" class="par">[ilegível]</p>
+                                                    <p id="download38" class="par">38ª devidamente inutilizada- Busca, dous mil reis,- razão
                                                         reis, [ilegível]</p>
-                                                    <p class="par">39ª transcrição indisponível
+                                                    <p id="download39" class="par">39ª mil duzentos e cincoenta reis- trez duzentos cincoen</p>
+                                                    <p id="download40" class="par">40ª ta reis- sello, duzentos reis- trez mil quatrocentos cinco-
                                                         quatrocentos cinco-</p>
-                                                    <p class="par">40ª mil duzentos e cincoenta [ilegível] mil
-                                                        quatrocentos cinco-</p>
-                                                    <p class="par">41ª enta reis – reis trez mil duzentos cincoenta –
+                                                    <p id="download41" class="par">41ª enta reis – Reis trez mil duzentos cincoenta – pagar trez
                                                         [ilegível] trez</p>
-                                                    <p class="par">42ª mil duzentos cincoenta reis de [ilegível]. Caroli
+                                                    <p id="download42" class="par">42ª mil duzentos cincoenta reis de emolumentos. Caroli-
                                                     </p>
-                                                    <p class="par">43ª na, trinta de Maio de mil oitocentos setenta e
+                                                    <p id="download43" class="par">43ª na, trinta de Maio de mil oitocentos setenta e sete – O
                                                         sete – O</p>
-                                                    <p class="par">44ª Collector [ilegível]. Está conforme a matricula
+                                                    <p id="download44" class="par">44ª Collector, Nogueira =. Está conforme a matricula, que
                                                         que</p>
-                                                    <p class="par">45ª [ilegível] achada em meo Escriptorio. Disse mais
+                                                    <p id="download45" class="par">45ª fica archivada em meo Escriptorio. Disse mais o vende-s
                                                         o vende-</p>
                                                     <br>
                                                     <form class="w3-container">
-                                                        <p class="par">46ª dor que o escravo a cima referido
+                                                        <p id="download46" class="par">46ª dor que o escravo a cima referido
                                                         </p>
                                                          <div class="mesmaLinha" id="re46"></div>
                                                         <input type="text" id="line46" style="height: 20px !important;"
@@ -649,35 +649,31 @@
                                                         <br>
                                                     </form>
                                                     <form class="w3-container">
-                                                        <p class="par">47ª - &nbsp;</p>
+                                                        <p id="download47" class="par">47ª - &nbsp;</p>
                                                          <div class="mesmaLinha" id="re47"></div>
                                                         <input type="text" id="line47" style="height: 20px !important;"
                                                             class="tamanho mesmaLinha w3-input w3-border w3-light-grey"
                                                             cols="2" rows="1"></input>
-                                                        <p class="par">seguinte –</p>
+                                                        <p id="downloadseguint" class="par">seguinte –</p>
 
                                                         <br>
                                                     </form>
-                                                    <p class="par">48ª Numero vinte e sete – Souza Junior – Reis, seis
-                                                        mil – Exerci
+                                                    <p id="download48" class="par">48ª Numero vinte e sete – Souza Junior – Reis, seis mil – Exerci-
                                                     </p>
-                                                    <p class="par">49ª cio de mil oitocentos setenta e seis a mil
-                                                        oitocentos se</p>
-                                                    <p class="par">50ª tenta e sete – Collectoria da Carolina – Taxa de
+                                                    <p id="download49" class="par">49ª cio de mil oitocentos setenta e seis a mil oitocentos se</p>
+                                                    <p id="download50" class="par">50ª tenta e sete – Collectoria da Carolina – Taxa de escra-
                                                         escra</p>
                                                     <form class="w3-container">
-                                                        <p class="par mesmaLinha">51ª vo - </p>
+                                                        <p class="par mesmaLinha">51ª vos - </p>
                                                          <div class="mesmaLinha" id="re51"></div>
                                                         <input type="text" id="line51" style="height: 20px !important;"
                                                             class="tamanho w3-input w3-border w3-light-grey" cols="2"
                                                             rows="1"></input>
                                                         <br>
                                                     </form>
-                                                    <p class="par">52ª a quantia de seis mil reis pela taxa de seu
-                                                        escravo Fran</p>
-                                                    <p class="par">53ª cisco, devida no exercício acima, sendo, Imposto
-                                                        seis</p>
-                                                    <p class="par">54ª mil reis – multa de seis por cento , cifrão
+                                                    <p id="download52" class="par">52ª  a quantia de seis mil reis pela taxa de seu escravo Fran</p>
+                                                    <p id="download53" class="par">53ª cisco, devida no exercício acima, sendo: Imposto seis</p>
+                                                    <p id="download54" class="par">54ª mil reis – multa de seis por cento, cifrão cortado – Reis seis
                                                         cortado – Reis seis</p>
                                                     <form class="w3-container">
                                                         <p class="par mesmaLinha">55ª mil – </p>
@@ -688,7 +684,7 @@
                                                         <br>
                                                     </form>
                                                     <form class="w3-container">
-                                                        <p class="par">56ª sete – O Collector, Nogueira – </p>
+                                                        <p id="download56" class="par">56ª sete – O Collector, Nogueira. – </p>
                                                          <div class="mesmaLinha" id="re56"></div>
                                                         <input type="text" id="line56" style="height: 20px !important;"
                                                             class="tamanho w3-input w3-border w3-light-grey" cols="2"
@@ -721,7 +717,7 @@
                                                     </form>
 
                                                     <form class="w3-container">
-                                                        <p class="par">60ª que neste acto recebeu, </p>
+                                                        <p id="download60" class="par">60ª que neste acto recebeu, </p>
                                                          <div class="mesmaLinha" id="re60"></div>
                                                         <input type="text" id="line60" style="height: 20px !important;"
                                                             class="tamanho w3-input w3-border w3-light-grey" cols="2"
@@ -729,7 +725,7 @@
                                                         <br>
                                                     </form>
                                                     <form class="w3-container">
-                                                        <p class="par">61ª geral quitação de paga, </p>
+                                                        <p id="download61" class="par">61ª geral quitação de paga, </p>
                                                          <div class="mesmaLinha" id="re61"></div>
                                                         <input type="text" id="line61" style="height: 20px !important;"
                                                             class="tamanho w3-input w3-border w3-light-grey" cols="2"
@@ -760,22 +756,20 @@
                                                             rows="1"></input>
                                                         <br>
                                                     </form>
-                                                    <p class="par">65ª mais que promete e se obriga a ter e manter esta
-                                                        venda</p>
+                                                    <p id="download65" class="par">65ª mais que promete e se obriga a ter e manter esta venda</p>
                                                     <form class="w3-container">
-                                                        <p class="par">66ª - &nbsp;</p>
+                                                        <p id="download66" class="par">66ª - &nbsp;</p>
                                                          <div class="mesmaLinha" id="re66"></div>
                                                         <input type="text" id="line66" style="height: 20px !important;"
                                                             class="tamanho mesmaLinha w3-input w3-border w3-light-grey"
                                                             cols="2" rows="1"></input>
-                                                        <p class="par">. Valeria tanto em juiso como</p>
+                                                        <p id="download76328789" class="par">. Valeria tanto em juiso como</p>
 
                                                         <br>
                                                     </form>
-                                                    <p class="par">67ª livre dele, a cuja [ilegível] obriga sua pessoa e
-                                                        bens. Pela</p>
+                                                    <p id="download67" class="par">67ª fora dele, a cuja exacção obriga sua pessoa e bens. Pela</p>
                                                     <form class="w3-container">
-                                                        <p class="par">68ª compradora </p>
+                                                        <p id="download68" class="par">68ª compradora</p>
                                                          <div class="mesmaLinha" id="re68"></div>
                                                         <input type="text" id="line68" style="height: 20px !important;"
                                                             class="tamanho w3-input w3-border w3-light-grey" cols="2"
@@ -791,17 +785,16 @@
                                                         <br>
                                                     </form>
                                                     <form class="w3-container">
-                                                        <p class="par">70ª - &nbsp;</p>
+                                                        <p id="download70" class="par">70ª - &nbsp;</p>
                                                          <div class="mesmaLinha" id="re70"></div>
                                                         <input type="text" id="line70" style="height: 20px !important;"
                                                             class="tamanho mesmaLinha w3-input w3-border w3-light-grey"
                                                             cols="2" rows="1"></input>
-                                                        <p class="par">; e me presentou o conhecimen</p>
+                                                        <p id="download70" class="par">; e me apresentou o conhecimen</p>
 
                                                         <br>
                                                     </form>
-                                                    <p class="par">71ª to numero cento quarenta e dous, pelo qual
-                                                        mostrou</p>
+                                                    <p id="download71" class="par">71ª to numero cento quarenta e dous, pelo qual mostrou</p>
 
 
                                                 </div>
@@ -828,7 +821,7 @@
                                                 <!-- Section Title -->
                                                 <div class="m-bottom-30">
                                                     <h2 class="wow" style="color: black;" data-wow-delay="0.6s">
-                                                        escravizado João</h2>
+                                                        escravizado Francisco</h2>
                                                     <div class="divider-small wow" data-wow-delay="0.7s"></div>
                                                 </div>
 
@@ -844,12 +837,9 @@
 
 
                                                 <div class="wow rolagem" style="color: black;" data-wow-delay="0.8s">
-                                                    <p class="par">72ª haver pago em data de hoje na collectoria deste
-                                                        município</p>
-                                                    <p class="par">73ª a quantia de quarenta e quatro mil reis, de meia
-                                                        siza e</p>
-                                                    <p class="par">74ª adicional correspondente ao contrato, cuja
-                                                        [ilegível]</p>
+                                                    <p id="download72" class="par">72ª haver pago em data de hoje na collectoria deste municipio</p>
+                                                    <p id="download73" class="par">73ª a quantia de quarenta e quatro mil reis, de meia siza e</p>
+                                                    <p id="download74" class="par">74ª addicional correspondente ao contrato, cujo conhecimento</p>
                                                     <form class="w3-container">
                                                         <p class="par mesmaLinha">75ª - &nbsp;</p>
                                                          <div class="mesmaLinha" id="re75"></div>
@@ -890,24 +880,24 @@
                                                         <input type="text" id="line79" style="height: 20px !important;"
                                                             class="tamanho w3-input w3-border w3-light-grey" cols="2"
                                                             rows="1"></input>
-                                                        <p class="par">, ouvirão ler e assigna o vendedor fazendo. E</p>
+                                                        <p id="download5676237874" class="par">, ouvirão ler e assigna o vendedor fazendo. E</p>
 
                                                         <br>
                                                     </form>
                                                     <form class="w3-container">
-                                                        <p class="par">80ª rogo da compradora</p>
+                                                        <p id="download80" class="par">80ª rogo da compradora </p>
                                                          <div class="mesmaLinha" id="re80"></div>
                                                         <input type="text" id="line80" style="height: 20px !important;"
                                                             class="tamanho w3-input w3-border w3-light-grey" cols="2"
                                                             rows="1"></input>
-                                                        <p class="par">al</p>
+                                                        <p id="download80" class="par"> al - </p>
 
                                                         <br>
                                                     </form>
 
 
                                                     <form class="w3-container">
-                                                        <p class="par">81ª feres Herminio Ayres da Silva,
+                                                        <p id="download81" class="par">81ª feres Herminio Ayres da Silva,
                                                         </p>
                                                          <div class="mesmaLinha" id="re81"></div>
                                                         <input type="text" id="line81" style="height: 20px !important;"
@@ -921,11 +911,12 @@
                                                         <input type="text" id="line82" style="height: 20px !important;"
                                                             class="tamanho w3-input w3-border w3-light-grey" cols="2"
                                                             rows="1"></input>
+                                                        <p id="download82" class="par">Capitão Benedicto Montriel e Alferes Joa-</p>
 
                                                         <br>
                                                     </form>
                                                     <form class="w3-container">
-                                                        <p class="par">83ª quim Antonio Nogueira, </p>
+                                                        <p id="download83" class="par">83ª quim Antonio Nogueira, </p>
                                                          <div class="mesmaLinha" id="re83"></div>
                                                         <input type="text" id="line83" style="height: 20px !important;"
                                                             class="tamanho w3-input w3-border w3-light-grey" cols="2"
@@ -933,8 +924,7 @@
 
                                                         <br>
                                                     </form>
-                                                    <p class="par">84ª de mim Silverio Raymúnculo de Moraes Leal,
-                                                        tabelião</p>
+                                                    <p id="download84" class="par">84ª de mim Silverio Raymúnculo de Moraes Leal, tabellião</p>
                                                     <form class="w3-container">
                                                         <p class="par mesmaLinha">85ª - &nbsp;</p>
                                                          <div class="mesmaLinha" id="re85"></div>
@@ -944,10 +934,10 @@
 
                                                         <br>
                                                     </form>
-                                                    <p class="par">86ª João Baptista Mascarenhas</p>
-                                                    <p class="par">87ª Hermogines Ayres da Silva</p>
-                                                    <p class="par">88ª Benedicto Montreal</p>
-                                                    <p class="par">89ª Joaquim Antonio Nogueira</p>
+                                                    <p id="download86" class="par">86ª João Baptista Mascarenhas</p>
+                                                    <p id="download87" class="par">87ª Hermogines Ayres da Silva</p>
+                                                    <p id="download88" class="par">88ª Benedicto Montreal</p>
+                                                    <p id="download89" class="par">89ª Joaquim Antonio Nogueira</p>
                                                 </div>
 
 
@@ -984,7 +974,7 @@
 
                             <div class="col-md-6" style="text-align: left">
                                 <div></div>
-                                <button class="button" onclick="download('questao1', 'campoResposta1')">Download do
+                                <button class="button" onClick="downloadText()">Download do
                                     texto transcrito</button>
                             </div>
 
@@ -1195,6 +1185,8 @@
 
 
 
+
+
     <script type="text/babel">
         import { useState, useEffect } from "react"
         function carregar() {
@@ -1319,6 +1311,7 @@
     <!-- jQuery -->
     <!-- Custom scripts for this template -->
     <script src="./js/analisar-texto.js"></script>
+    <script src="./js/download-texto.js"></script>
     <script src="./vendor/freelancer.min.js"></script>
     <script src="./vendor/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.min.js"></script>
