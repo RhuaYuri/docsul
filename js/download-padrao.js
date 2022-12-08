@@ -53,7 +53,13 @@ ids = [
 
 
 
-
+function salvar_pdf(){
+    tela_impressao = window.open('about:blank');
+    string = document.getElementById("corpo").innerHTML
+    tela_impressao.document.write(string)
+    tela_impressao.window.print();
+    tela_impressao.window.close();
+}
 
 
 
@@ -68,6 +74,7 @@ function downloadTextPadrao(){
     */
     var c = []
     tela_impressao = window.open('about:blank');
+    tela_impressao.window.print();
     var string
     var lista = []
     var texto = ''
