@@ -793,7 +793,7 @@ blockquote {
   z-index: 999;
 }
 .navbar .navigation {
-  background-color: #fff;
+  background-color: #d1cf8b;
 }
 .navbar .container-fluid {
   padding: 0 50px;
@@ -2226,7 +2226,7 @@ blockquote {
 .chamadaExercicio{
   padding: 10px;
   color: #000;
-  background-color: #d1cf8b;
+  background-color: #52d7a0;
   margin-bottom: 20px;
 }
 
