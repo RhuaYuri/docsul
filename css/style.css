@@ -2378,6 +2378,23 @@ grid-auto-columns: 1fr;
 }
 
 
+.faixa{
+  background-color: rgb(193, 84, 25);
+  margin: 5%;
+}
+
+.tituloTopicos{
+  text-align: center; 
+  width: 50%; 
+  margin-left: 25%;
+}
+
+.tituloT{
+  text-align: center;
+  font-family: courier,arial,helvetica;
+  color: white;
+}
+
 
 
 
