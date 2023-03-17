@@ -2395,6 +2395,10 @@ grid-auto-columns: 1fr;
   color: white;
 }
 
+.port_img{
+  min-height: 55vh;
+  width: 100vh;
+}
 
 
 
