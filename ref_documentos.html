@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Mais - DocSul</title>
+  <title>Documentos - DocSul</title>
 
   <meta name="description" content="N.Agency - Responisve Landing Page for Agency">
   <meta name="keywords" content="">
@@ -60,6 +60,11 @@
   </div>
   <!-- End Preloader-->
 
+  <link rel="stylesheet" type="text/css"
+  href="https://ajuda.fastcommerce.com.br/js/MagicToolbox/MagicZoomPlusV2/magiczoomplus.css" />
+<script type="text/javascript"
+  src="https://ajuda.fastcommerce.com.br/js/MagicToolbox/MagicZoomPlusV2/magiczoomplus.js"></script>
+
 
   <!-- Start Navigation -->
   <header class="nav-transparent" id="home">
@@ -91,12 +96,11 @@
               <div class="collapse navbar-collapse" id="navbar-collapse">
 
                 <ul class="classynav nav navbar-nav navbar-right">
-                  <li><a data-scroll href="#home">Home</a></li>
-                  <li><a data-scroll href="#service">Descrição</a></li>
-                  <li><a data-scroll href="#portfolio">Pesquisa</a></li>
-                  <li><a data-scroll href="#mapas">Mapas</a></li>
-                  <li><a data-scroll href="#outros">Mais</a></li>
-                  <li><a data-scroll href="#contact">Contato</a></li>
+                  <li><a data-scroll href="./index.html">Página Inícial</a></li>
+                  <li><a data-scroll href="#portfolio">Descrição</a></li>
+                  <li><a data-scroll href="#docum">Documentos</a></li>
+                  <li><a data-scroll href="./naEscola.html">Na Escola</a></li>
+                  <li><a data-scroll href="./mais.html">Mais</a></li>
                 </ul>
 
               </div>
@@ -121,7 +125,7 @@
     <div class="container">
       <div class="row">
         <!-- Section Title -->
-        <div class="section-title text-center m-bottom-40">
+        <div class="section-title text-center m-bottom-40" style="width: 10%!important;">
           <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">Documentos complementares e suas
             definições
           </h2>
@@ -162,7 +166,9 @@
                     <div class="container">
                       <div class="row">
                         <div class="col-md-6">
-                          <img src="./img/documentos/img/compra_venda1.jpeg" style="width: 100%;" alt="">
+                          <a href="./img/documentos/img/compra_venda1.jpeg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/documentos/img/compra_venda1.jpeg" /></a>
                         </div> <!-- /.col -->
                       </div> <!-- /.row -->
                     </div>
@@ -171,7 +177,9 @@
                     <div class="container">
                       <div class="row">
                         <div class="col-md-6">
-                          <img src="./img/documentos/img/compra_venda2.jpeg" style="width: 100%;" alt="">
+                          <a href="./img/documentos/img/compra_venda2.jpeg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/documentos/img/compra_venda2.jpeg" /></a>
                         </div> <!-- /.col -->
                       </div> <!-- /.row -->
                     </div>
@@ -217,7 +225,10 @@
                 <p class="par"></p>
               </div>
               <div class="col-lg-6">
-                <img src="img/documentos/img/registro_casamento.jpeg" alt="">
+                <a href="./img/documentos/img/registro_casamento.jpeg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/documentos/img/registro_casamento.jpeg" /></a>
+              
                 <p class="par">Registro de Casamento de Luiz e Ignez. Livro de Registro de Casamento 1881-1886 da
                   Paróquia de São Pedro de Alcântara da cidade de Carolina. (Casa Paroquial da cidade de Carolina-MA),
                   p.78V.</p>
@@ -235,7 +246,10 @@
                 <p class="par">Não havia um padrão para as cartas de alforrias (SILVA, 2013, p.48). Na documentação que estudei, por mais singular que cada história se apresentava, algumas informações estavam presentes, tais como:  a data (dia, mês e ano) e local, o nome do escravizado/a alforriado/a, do senhor/a e/ou de quem registrava, das testemunhas, os motivos que levaram aquele/a homem ou mulher escravizado/a a conseguir sua alforria, o tipo da liberdade (gratuita ou comprada) e o valor, quando esta era paga pelo/a próprio/a liberto/a ou por terceiros/as. Não foi um hábito do escrivão ou da pessoa que fazia o registro da escritura de liberdade nos cartórios de Carolina no oitocentos, ao nos documentos que analisei, colocar a idade, a profissão, a cor e a origem do/a alforriado/a.</p>
               </div>
               <div class="col-lg-6">
-               <img src="img/documentos/img/carta-liberdade.jpeg" alt="">
+                <a href="./img/documentos/img/carta-liberdade.jpeg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/documentos/img/carta-liberdade.jpeg" /></a>
+        
                 <br>
                 <p class="cit">Carta de Liberdade de Fellipe. (Livro de Notas 1881-1890, Tribunal de Justiça do Estado do Maranhão - São Luís-MA), p.68.</p>
               </div>
@@ -251,7 +265,7 @@
       <br>
       </div>
   </section>
-  <div style="text-align: center;">
+  <div id="docum"  style="text-align: center;">
     <h1>Documentação</h1>
     <br>
     <br>
@@ -274,7 +288,9 @@
     <div class="blog-media  pf-item RC" data-toggle="modal" data-target="#portfolioModal1">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Vicente e Raymunda.jpg" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Vicente e Raymunda.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Vicente e Raymunda.jpg" /></a>
         </div>
         <!--post media-->
 
@@ -301,7 +317,10 @@
     <div class="blog-media  pf-item RC" data-toggle="modal" data-target="#portfolioModal2">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Antônio e Doroteia.jpg" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Antônio e Doroteia.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Antônio e Doroteia.jpg" /></a>
+          
         </div>
         <!--post media-->
 
@@ -328,7 +347,10 @@
     <div class="blog-media  pf-item CA" data-toggle="modal" data-target="#portfolioModal3">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de João e Maria.jpg" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de João e Maria.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de João e Maria.jpg" /></a>
+          
         </div>
         <!--post media-->
 
@@ -355,7 +377,10 @@
     <div class="blog-media  pf-item CA" data-toggle="modal" data-target="#portfolioModal4">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Martinho e Adriana.jpg" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Martinho e Adriana.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Martinho e Adriana.jpg" /></a>
+          
         </div>
         <!--post media-->
 
@@ -382,7 +407,10 @@
     <div class="blog-media  pf-item RC" data-toggle="modal" data-target="#portfolioModal5">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Luiz e Ignez.jpg" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Luiz e Ignez.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Luiz e Ignez.jpg" /></a>
+          
         </div>
         <!--post media-->
 
@@ -409,9 +437,10 @@
     <div class="blog-media  pf-item RC" data-toggle="modal" data-target="#portfolioModal6">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img
-            src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de José Pereira da Silva e Vicencia Pereira Moreira.jpg"
-            alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de José Pereira da Silva e Vicencia Pereira Moreira.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de José Pereira da Silva e Vicencia Pereira Moreira.jpg" /></a>
+
         </div>
         <!--post media-->
 
@@ -438,7 +467,10 @@
     <div class="blog-media  pf-item RC" data-toggle="modal" data-target="#portfolioModal7">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/ Registro de Casamento de Justino e Amancia.jpg" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/ Registro de Casamento de Justino e Amancia.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/ Registro de Casamento de Justino e Amancia.jpg" /></a>
+          
         </div>
         <!--post media-->
 
@@ -465,7 +497,10 @@
     <div class="blog-media  pf-item CA" data-toggle="modal" data-target="#portfolioModal8">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de João e Angélica.png" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de João e Angélica.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de João e Angélica.png" /></a>
+          
         </div>
         <!--post media-->
 
@@ -491,7 +526,10 @@
     <div class="blog-media  pf-item CA" data-toggle="modal" data-target="#portfolioModal9">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Raimundo.png" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Raimundo.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Raimundo.png" /></a>
+          
         </div>
         <!--post media-->
 
@@ -517,7 +555,10 @@
     <div class="blog-media  pf-item CA" data-toggle="modal" data-target="#portfolioModal10">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Athamazia72.png" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Athamazia72.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Athamazia72.png" /></a>
+          
         </div>
         <!--post media-->
 
@@ -543,7 +584,10 @@
     <div class="blog-media  pf-item CA" data-toggle="modal" data-target="#portfolioModal11">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Jezuína.png" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Jezuína.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Jezuína.png" /></a>
+          
         </div>
         <!--post media-->
 
@@ -569,7 +613,10 @@
     <div class="blog-media  pf-item CA" data-toggle="modal" data-target="#portfolioModal12">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Justo.png" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Justo.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Justo.png" /></a>
+          
         </div>
         <!--post media-->
 
@@ -595,7 +642,10 @@
     <div class="blog-media  pf-item CA" data-toggle="modal" data-target="#portfolioModal13">
       <div class="blog wow fadeInLeft">
         <div class="blog-media">
-          <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Roza.png" alt="">
+          <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Roza.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Roza.png" /></a>
+          
         </div>
         <!--post media-->
 
@@ -665,9 +715,10 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min"
-                  src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Vicente e Raymunda.jpg"
-                  alt="">
+                <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Vicente e Raymunda.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Antônio e Doroteia.jpg" /></a>
+    
 
                 <br>
 
@@ -724,9 +775,11 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min"
-                  src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Antônio e Doroteia.jpg"
-                  alt="">
+
+                <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Antônio e Doroteia.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Antônio e Doroteia.jpg" /></a>
+                
 
                 <br>
 
@@ -777,8 +830,10 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min"
-                  src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de João e Maria.jpg" alt="">
+                <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de João e Maria.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de João e Maria.jpg" /></a>
+                
 
                 <br>
 
@@ -829,9 +884,10 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min"
-                  src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Martinho e Adriana.jpg"
-                  alt="">
+                <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Martinho e Adriana.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Martinho e Adriana.jpg" /></a>
+                
 
                 <br>
 
@@ -882,8 +938,10 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min"
-                  src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Luiz e Ignez.jpg" alt="">
+                <a href="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Luiz e Ignez.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Registro de Casamento de Luiz e Ignez.jpg" /></a>
+                
 
                 <br>
 
@@ -934,7 +992,11 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min" src="e Casamento de José Pereira da Silva e Vicencia Pereira Moreira.jpg" alt="">
+                
+                <a href="="e Casamento de José Pereira da Silva e Vicencia Pereira Moreira.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="="e Casamento de José Pereira da Silva e Vicencia Pereira Moreira.jpg" /></a>
+                
 
                 <br>
 
@@ -985,9 +1047,10 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min"
-                  src="./img/img_registros_casamento/pasta_apoio/ Registro de Casamento de Justino e Amancia.jpg"
-                  alt="">
+                <a href="./img/img_registros_casamento/pasta_apoio/ Registro de Casamento de Justino e Amancia.jpg"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/ Registro de Casamento de Justino e Amancia.jpg" /></a>
+                
 
                 <br>
 
@@ -1038,8 +1101,10 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min"
-                  src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de João e Angélica.png" alt="">
+                <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de João e Angélica.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de João e Angélica.png" /></a>
+                
 
                 <br>
 
@@ -1089,8 +1154,11 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min" src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Raimundo.png"
-                  alt="">
+                
+                <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Raimundo.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Raimundo.png" /></a>
+                
 
                 <br>
 
@@ -1140,8 +1208,11 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min" src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Athamazia72.png"
-                  alt="">
+                
+                <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Athamazia72.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Athamazia72.png" /></a>
+                
 
                 <br>
 
@@ -1191,8 +1262,11 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min" src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Jezuína.png"
-                  alt="">
+                
+                <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Jezuína.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Jezuína.png" /></a>
+                
 
                 <br>
 
@@ -1241,7 +1315,11 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min" src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Justo.png" alt="">
+                
+                <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Justo.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Justo.png" /></a>
+                
 
                 <br>
 
@@ -1291,7 +1369,11 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="min" src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Roza.png" alt="">
+                
+                <a href="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Roza.png"
+                                            data-options="zoomPosition:right;expand:false;hint:off;" class="MagicZoom">
+                                            <img src="./img/img_registros_casamento/pasta_apoio/Carta de Liberdade de Roza.png" /></a>
+                
 
                 <br>
 
