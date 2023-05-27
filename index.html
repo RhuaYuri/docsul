@@ -121,13 +121,38 @@
             <div class="rev_slider fullscreenbanner" id="rev_slider_nagency" style="display:none;">
                 <ul style="display:none;">
 
+                    <script>
+                        function changeImageBasedOnScreenSize() {
+                            var imageElement = document.getElementById('responsive-image');
+                            var screenWidth = window.innerWidth;
+
+                            if (screenWidth < 768) {
+                                imageElement.src = './img/about_us.jpg';
+                            } else if (screenWidth < 1024) {
+                                imageElement.src = './img/about_us.jpg';
+                            } else {
+                                imageElement.src = './img/about_us.jpg';
+                            }
+                        }
+
+                        // Chamando a função para definir a imagem inicialmente
+                        changeImageBasedOnScreenSize();
+
+                        // Atualizando a imagem quando o tamanho da tela for alterado
+                        window.addEventListener('resize', changeImageBasedOnScreenSize);
+                    </script>
+
                     <!-- slider Item 1 -->
                     <li data-index="rs-1" data-transition="fadetotopfadefrombottom" data-slotamount="default"
                         data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"
                         data-rotate="0" data-saveperformance="off" data-title="N.Agency" data-description="">
-                        <img src="img/capa-docsul.jpg" width="100%" alt="" data-bgposition="center center"
-                            data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg"
-                            data-no-retina>
+
+                        <img id="responsive-image" src="img/capa-docsul.jpg" width="100%" alt=""
+                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                            data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+
+
 
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption NotGeneric-Title tp-resizeme white-color rs-parallaxlevel-3"
@@ -263,6 +288,8 @@
                                 </div>
 
 
+
+
                             </div> <!-- /.col -->
 
 
@@ -273,31 +300,92 @@
                 <div class="vaqueiro-cell">
                     <div class="container">
                         <div class="row">
-                                <div class="feature-image">
-                                    <br>
-                                    <p>vídeo em desenvolvimento</p>
-                                    <video style="width: 100%;" controls>
-                                        <source src="" type="video/mp4">
-                                      </video>
+                            <div class="feature-image">
+                                <br>
+                                <p>vídeo em desenvolvimento</p>
+                                <video style="width: 100%;" controls>
+                                    <source src="" type="video/mp4">
+                                </video>
 
-                                    <p class="par" style="color: black;">Autor: <a
-                                            href="https://www.instagram.com/rhuan__yuri/" style="color: black;"
-                                            target="_blank">Rhuã Yuri</a></p>
-                                </div>
+                                <p class="par" style="color: black;">Autor: <a
+                                        href="https://www.instagram.com/rhuan__yuri/" style="color: black;"
+                                        target="_blank">Rhuã Yuri</a></p>
+                            </div>
 
 
 
-                            
+
 
 
                         </div> <!-- /.row -->
                     </div>
                 </div>
-                    <div class="vaqueiro-cell">3</div>
-                    <div class="vaqueiro-cell">4</div>
-                    <div class="vaqueiro-cell">5</div>
+                <div class="vaqueiro-cell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-image">
+                                    <br>
+                                    <a href="./img/vaqueiro/vaqueiro_index.jpeg"
+                                        class="pf-style lightbox-image mfp-image">
+                                        <img src="./img/vaqueiro/vaqueiro_index.jpeg" alt="Feature Image"
+                                            class="img-responsive wow fadeInRight animated" data-wow-duration="1s"
+                                            data-wow-delay="0.6s"
+                                            style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInRight; width: 100%; height: 500px;">
+                                    </a>
+
+                                    <p class="par" style="color: black;">Autor: <a
+                                            href="https://www.instagram.com/fferreira1550/" style="color: black;"
+                                            target="_blank">Felipe
+                                            Ferreira</a></p>
+                                </div>
+
+
+                            </div> <!-- /.col -->
+
+                            <div class="col-md-6">
+                                <!-- Section Title -->
+
+                                <div class="m-bottom-30" style="padding: 20px;
+                                margin: 20px auto;">
+                                    <h2 class="wow fadeInLeft animated" data-wow-duration="1s"
+                                        style="color: black; visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInLeft;"
+                                        data-wow-delay="0.6s">
+                                        Conceitos utilizados no site</h2>
+
+                                </div>
+
+
+                                <div class="wow fadeInLeft animated"
+                                    style="color: black; visibility: visible; animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInLeft;"
+                                    data-wow-duration="1s" data-wow-delay="0.8s">
+                                    <h3 style="text-align: left;"><strong>Escravizado/a:</strong></h3>
+                                    <p class="par">
+                                        Em sintonia com as modificações linguísticas que a historiografia sobre a escravidão hoje segue, substitui a palavra escravo/a por escravizado/a. De acordo com Elizabeth Harkot-de-La-Taille e Adriano Rodrigues dos Santos (2012, p.8-9). “[...] os usos contemporâneos que têm sido feitos do vocábulo escravizado para se referir à escravidão negra parecem ter como propósito resgatar o contexto e a relação histórico-social referente ao período escravocrata, evocando ressonâncias</p>
+                                    <h3 style="text-align: left;"><strong>Referência:</strong></h3>
+                                    <p class="par">HARKOT-DE-LA-TAILLE, Elizabeth; SANTOS, Adriano Rodrigues. Sobre escravos e escravizados: Percursos discursivos da conquista da liberdade. III Simpósio Nacional Discurso, Identidade e Sociedade (III SIDIS) - Dilemas e desafios na contemporaneidade. <strong> Anais eletrônicos </strong> UNICAMP/IEL, 2012. Disponível em: <a href="https://www.iel.unicamp.br/sidis/anais/pdf/HARKOT_DE_LA_TAILLE_ELIZABETH.pdf" target="_blank" rel="noopener noreferrer">https://www.iel.unicamp.br/sidis/anais/pdf/HARKOT_DE_LA_TAILLE_ELIZABETH.pdf</a>. Acesso em: 11 de abr.de 2023./p>
+                                    
+                            
+
+
+                                </div>
+
+                     
+                                
+                            </div>
+
+
+
+
+
+
+                        </div> <!-- /.row -->
+                    </div>
                 </div>
+                <div class="vaqueiro-cell">4</div>
+                <div class="vaqueiro-cell">5</div>
             </div>
+        </div>
 
     </section>
 
