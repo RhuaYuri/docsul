@@ -97,7 +97,7 @@
 <body class="blog_index" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100" onload="carregar()"
     onresize="carregar()">
 
-    <!--End VLibras-->
+
 
 
     <!-- Preloader -->
@@ -1566,7 +1566,21 @@
 
 
 
+   <!-- Flickity-Viewport -->
+   <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+   <!--Start VLibras-->
+   <div vw class="enabled">
+       <div vw-access-button class="active"></div>
+       <div vw-plugin-wrapper>
+           <div class="vw-plugin-top-wrapper"></div>
+       </div>
+   </div>
+   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+   <script>
+       new window.VLibras.Widget('https://vlibras.gov.br/app');
+   </script>
 
+   <!--End VLibras-->
 
 
     <script type="text/babel">
@@ -1686,18 +1700,6 @@
 
 
 
-    <!--Start VLibras-->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-
 
 
 
@@ -1763,12 +1765,11 @@
     <script src="./js/custom.js"></script>
 
 
-    <!-- Flickity-Viewport -->
-    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
-
+ 
 
 
 </body>
+
 
 
 
