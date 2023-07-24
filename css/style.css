@@ -29,7 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  background: #d1cf8b;
+  background: #8b5f3d;
   font-size: 14px;
   font-family: 'Lato', sans-serif;
   color: #000;
@@ -83,7 +83,7 @@ section {
   display: block;
 }
 .light-bg {
-  background-color: #d1cf8b;
+  background-color: #8b5f3d;
 }
 .dark-bg {
   background-color: #949364;
@@ -793,14 +793,15 @@ blockquote {
   z-index: 999;
 }
 .navbar .navigation {
-  background-color: #d1cf8b;
+  background-color: #8b5f3d;
+  background-image: ('../img/portfolio/photo.png');
 }
 .navbar .container-fluid {
-  padding: 0 50px;
+  padding: 0 5px;
 }
 .navbar-header {
   width: 20%;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 .navbar-header .logo-container {
   padding: 0 15px;
@@ -862,12 +863,14 @@ blockquote {
   -webkit-transition: height 0.3s ease-in-out;
   -o-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
+  margin-left: 0px !important;
 }
 .nav-solid .navbar-nav > li > a {
   color: #434343;
 }
 .nav-solid .navigation {
-  position: fixed;
+  background-image: url('../img/portfolio/photo1.png') !important ;
+  position: absolute;
   width: 100%;
   -webkit-transition: height 0.3s ease-in-out;
   -o-transition: height 0.3s ease-in-out;
@@ -878,13 +881,15 @@ blockquote {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .nav-transparent .navbar .navigation {
-  background-color: #d1cf8b;
+  /* background-color: #8b5f3d; */
+  background-image: url('../img/portfolio/photo1.png') !important ;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .nav-transparent .navbar .navigation.sticky {
-  background-color: #d1cf8b;
+  background-image: url('../img/portfolio/photo1.png') !important ;
+  /* background-color: #8b5f3d; */
 }
 .nav-transparent .navbar-default {
   position: absolute;
@@ -971,13 +976,13 @@ blockquote {
     height: 70px;
   }
   .nav-transparent .navbar .navigation {
-    background-color: #c59224;
+    background-color: #8b5f3d;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
   .nav-transparent .navbar .navigation.sticky {
-    background-color: #c59224;
+    background-color: #8b5f3d;
   }
   .nav-transparent .container-fluid {
     padding: 0 15px;
@@ -997,6 +1002,8 @@ blockquote {
   .nav-solid .navbar-nav {
     padding: 0;
   }
+
+
   .nav-solid .navbar-collapse {
     border-top: 1px solid #f7f7f7;
   }
@@ -1005,6 +1012,7 @@ blockquote {
     border-bottom: 1px solid #000;
     line-height: 20px;
   }
+
 }
 /* Navigation Toggle
 -------------------------------------------------------*/
@@ -1069,7 +1077,7 @@ blockquote {
     09. Services Section
 ---------------------------------------------------*/
 .service {
-  background-color: #b9b42e;
+  background-color: #b98054;
   padding: 40px 30px 30px;
   border-radius: 10%;
 }
@@ -1576,12 +1584,12 @@ blockquote {
   margin-bottom: 5px;
 }
 .postSingle .postMeta {
-  color: #808080;
+  color: #000000;
   font-size: 0.9em;
   font-style: italic;
   padding: 10px 20px;
   margin-bottom: 30px;
-  background: #f8f8f8;
+  background: #814a1f;
 }
 .postSingle .postMeta a {
   color: #808080;
@@ -1996,7 +2004,7 @@ blockquote {
     21. Footer
 ---------------------------------------------------*/
 .site-footer {
-  background-color: #875f0a;
+  background-color: #322921;
   padding: 20px 0px;
 }
 .site-footer .copyright {
@@ -2226,7 +2234,7 @@ blockquote {
 .chamadaExercicio{
   padding: 10px;
   color: #000;
-  background-color: #52d7a0;
+  background-color: #5d7a58;
   margin-bottom: 20px;
 }
 
@@ -2295,7 +2303,6 @@ grid-auto-columns: 1fr;
   width: 100%;
   height: auto;
   margin-right: 10px;
-  background: #d1cf8b;
   border-radius: 5px;
   counter-increment: vaqueiro-cell;
 }
@@ -2414,6 +2421,35 @@ grid-auto-columns: 1fr;
   width: 100%;
   height: 100%;
 }
+
+#comoNav {
+  background-image: url('../img/portfolio/photo2.png');
+}
+
+#link-estudante{
+  background: #764f31;
+}
+
+#comentario{
+  background: #4e3c2d;
+}
+
+
+.transparencia{
+  width: 100%;
+  border: 2px solid #000; 
+  padding: 10px;
+  background: #b9a08d;
+}
+
+.fundo{
+  background-image: url('../img/portfolio/longas/photo3.png') !important;
+}
+
+.fundo2{
+  background-image: url('../img/portfolio/longas/photo1.png') !important;
+}
+
 
 @media (max-width: 500px) {
   .video_tutorial {
