@@ -794,7 +794,7 @@ blockquote {
 }
 .navbar .navigation {
   background-color: #8b5f3d;
-  background-image: ('../img/portfolio/photo.png');
+  background-image: ('../img/portfolio/largas/photo2.png');
 }
 .navbar .container-fluid {
   padding: 0 5px;
@@ -869,7 +869,7 @@ blockquote {
   color: #434343;
 }
 .nav-solid .navigation {
-  background-image: url('../img/portfolio/photo1.png') !important ;
+  background-image: url('../img/portfolio/largas/photo2.png') !important ;
   position: absolute;
   width: 100%;
   -webkit-transition: height 0.3s ease-in-out;
@@ -882,13 +882,13 @@ blockquote {
 }
 .nav-transparent .navbar .navigation {
   /* background-color: #8b5f3d; */
-  background-image: url('../img/portfolio/photo1.png') !important ;
+  background-image: url('../img/portfolio/largas/photo2.png') !important ;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .nav-transparent .navbar .navigation.sticky {
-  background-image: url('../img/portfolio/photo1.png') !important ;
+  background-image: url('../img/portfolio/largas/photo2.png') !important ;
   /* background-color: #8b5f3d; */
 }
 .nav-transparent .navbar-default {
@@ -2423,7 +2423,7 @@ grid-auto-columns: 1fr;
 }
 
 #comoNav {
-  background-image: url('../img/portfolio/photo2.png');
+  background-image: url('../img/portfolio/largas/photo2.png');
 }
 
 #link-estudante{
