@@ -1,28 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pr-br">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="pr-br">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bárbara - DocSul</title>
+    <title>Vaqueiro - DocSul</title>
 
     <meta name="description" content="N.Agency - Responisve Landing Page for Agency">
     <meta name="keywords" content="">
     <meta name="author" content="tabthemes">
 
+
+
     <link href="./css/freelancer.min.css" rel="stylesheet">
-    <!-- Zoom -->
-    <link href="./zoom/glassstylezoom.css" rel="stylesheet">
-
-
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- Zoom -->
+    <link href="./js/zoom/glassstyle.css" rel="stylesheet">
+
+    <style>
+        p {
+            color: black;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://ajuda.fastcommerce.com.br/js/MagicToolbox/MagicZoomPlusV2/magiczoomplus.css" />
+    <script type="text/javascript"
+        src="https://ajuda.fastcommerce.com.br/js/MagicToolbox/MagicZoomPlusV2/magiczoomplus.js"></script>
+
+
+
+
+
+
+
+
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png">
 
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -36,19 +55,42 @@
     <!-- Load Babel -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
+
+
+
     <!-- CSS Files For Plugin -->
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet" />
-    <link href="css/YTPlayer.css" rel="stylesheet" />
-    <link rel="stylesheet" href="inc/owlcarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="inc/owlcarousel/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="inc/revolution/css/settings.css" />
-    <link rel="stylesheet" href="inc/revolution/css/layers.css" />
-    <link rel="stylesheet" href="inc/revolution/css/navigation.css" />
+    <link href="./css/animate.css" rel="stylesheet">
+    <link href="./css/font-awesome/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/magnific-popup.css" rel="stylesheet" />
+    <link href="./css/YTPlayer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./inc/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./inc/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./inc/revolution/css/settings.css" />
+    <link rel="stylesheet" href="./inc/revolution/css/layrs.css" />
+    <link rel="stylesheet" href="./inc/revolution/css/navigation.css" />
 
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+
+
+    <style>
+        #glass {
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+            display: none;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, .6);
+        }
+
+        .ullista {
+            text-align: justify;
+            font-size: 16px;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,25 +99,16 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    >
-    <script src="./js/js-image-zoom.js"></script>
 
     <style>
         p {
             color: black;
         }
-        .ullista{
-            text-align: justify; 
-            font-size: 16px; 
-            color: black;
-            font-weight: bold;
-        }
- 
     </style>
 
 </head>
 
-<body class="single_post_page" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
+<body class="single_post_page" id="corpo" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
 
 
 
@@ -87,7 +120,7 @@
 
 
     <!-- Start Navigation -->
-    <header class="nav-solid" id="home">
+    <header style="margin: 0px !important;" class="nav-solid" id="home">
 
         <nav class="navbar navbar-fixed-top">
             <div class="navigation">
@@ -117,11 +150,11 @@
                             <div class="collapse navbar-collapse" id="navbar-collapse">
 
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a data-scroll href="#home">início</a></li>
-                                    <li><a data-scroll href="#texto">Pesquisa</a></li>
-                                    <li><a data-scroll href="#transcrito">documento transcrito</a></li>
-                                    <li><a data-scroll href="#questoes">Atividade</a></li>
-                                    <li><a data-scroll href="#comentario">Comentário</a></li>
+                                    <li><a href="./index.html">Início</a></li>
+                                    <li><a href="./index.html#comoNav">Conheça o site</a></li>
+                                    <li><a href="./naEscola.html">Na Escola</a></li>
+                                    <li><a href="./mapas/mapas.html">Mapas</a></li>
+                                    <li><a href="./mais.html">Mais informações</a></li>
                                 </ul>
 
                             </div>
@@ -137,9 +170,8 @@
     <!-- End Navigation -->
 
 
-
     <!--BLog single section-->
-    <section id="blog-single" class="p-top-80 p-bottom-80">
+    <section class="p-top-80 p-bottom-80 fundo">
 
         <!--Container-->
         <div class="container clearfix">
@@ -147,269 +179,171 @@
 
                 <div class="col-sm-8">
 
-
                     <!--Post Single-->
-                    <div id="texto" class="postSingle">
-                        <h1>A história de Bárbara</h1>
+                    <div class="postSingle">
 
-
-                        <!--Post meta-->
-
-                        <div class="postTitle">
-
-                            <div class="divider-small"></div>
+                        <div class="postMedia">
+                            <img src="img/novas_imagens/barbara.png" alt="About Image"
+                                class="img-responsive wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s"
+                                width="500px" height="500px" />
+                            <!-- HTML UTIL-->
+                            <!--           
+                            <div class="img-wrapper">
+                                <img src="./img/img_registros_casamento/rg3.png" alt="imagem de fundo">
+                            </div>-->
                         </div>
-                        <!--Post title-->
+                        <!--Post image-->
 
-                        <p style="text-align: justify;">Nas escrituras de compra e venda de escravizados/as podem
-                            encontrar
-                            vestígios que podem nos ajudar a compreender como o mercado de mão de obra cativa
-                            se movia nos sertões sul-maranhenses, mas não só. Ao analisar tais documentos é
-                            importante buscar um olhar que fuja da ideia de estar diante apenas de um “[...] escravo-
-                            mercadoria, apenas mais um item nos cálculos dos débitos e dos haveres de negociantes
-                            e proprietários [...]” (CHALHOUB, 2011, p.56). São homens e mulheres carregados/as
-                            de experiências e subjetividades que buscaram diariamente estratégias para (re)existir e
-                            resistir a um sistema que teimava em os/as silenciarem, em os/as coisificarem. Naquelas
-                            lutas diárias, cabe lembrarmos, que havia escravizados/as que “[...] fogem; outros que
-                            decepcionam seus compradores e são devolvidos; outros que ficam doentes e provocam
-                            a anulação de transações já realizadas [...]” (CHALHOUB, 2011, p.56).</p>
-                        <div class="postSingle">
+                        <div class="postMeta clearfix">
+                            <div class="postMeta-info">
 
-                            <div class="postMedia">
-                                <img class="light-zoom" style="height: 300px;"
-                                    src="./img/img_registros_casamento/rg3.png">
-                                    <p class="par" style="color: black;">Autor: <a href="https://www.instagram.com/fferreira1550/" target="_blank">Felipe Ferreira</a></p>
-                                <p class="par-cit" style="text-align: center;">Legenda</p>
+
+                                <span class="metaAuthor"><i class="fa fa-user"></i>Autor: <a
+                                        href="https://www.bing.com/create" target="_blank">Ycaro</a></span>
                             </div>
                         </div>
-                        <p style="text-align: justify;">Sobre o comércio de escravizados/as Chalhoub (2011, p.36) nos
-                            diz que
-                            “[...] era comum que os escravos exercessem alguma forma de pressão sobre seus
-                            senhores no momento crucial de sua venda [...]”. Assim, fico a conjecturar quais seriam
-                            as pressões, o jogo de interesse, os acordos, as negociações e conflitos que antecederam
-                            a venda daqueles/as escravizados/as? Que estratégias de luta foram (re)elaborando em
-                            seu cotidiano para que pudessem de alguma forma influenciar nas negociações que
-                            decidiram o destino de suas vidas?</p>
-                        <p style="text-align: justify;">Dos casos citados acima não tenho muitos elementos para
-                            aprofundar sobre
-                            as possíveis “interferências” que aqueles escravizados tiveram nos negócios de seus
-                            senhores quando o destino de suas vidas estava em jogo, mas o caso de ‌‌Germano,
-                            escravizado “[...] cor abra, ‌‌58 ‌‌annos‌,‌ pouco‌ ‌mais‌ ‌ou‌ ‌menos,‌ ‌solteiro,‌
-                            ‌roceiro,‌ ‌natural‌ ‌da‌
-                            ‌vila‌ ‌de‌ ‌Codó‌ ‌desta‌ ‌província ‌‌[...]” ‌(RCVE de Germano, 1872, ‌p.24v) que ‌‌foi
-                            ‌‌vendido
-                            ‌‌por Dona ‌‌Julianna ‌‌Moreira ‌‌Pereira ‌‌para‌‌ Manoel‌ ‌Gonçalves‌ ‌de‌ ‌Sousa,‌ ‌ambos‌
-                            ‌moradores‌
-                            ‌em‌ ‌Carolina,‌ ‌em‌ ‌22/08/1872,  pode nos dar pistas sobre essa questão, vejamos. O‌‌
-                            registro‌ ‌de‌ ‌compra‌ ‌e‌ ‌venda‌ do referido Germano informa que no momento da
-                            negociação ele se</p>
-
-                        <p class="par-cit" style="text-align: justify;">[...] achava fugido [...]” e “[...] por que a
-                            captura dele foi-se necessário ella
-                            vendedora fazer despesas, e mais para evitar outras que o dito escravo
-                            possa dar ao casal com novas fugas ella, vendedora depois de haver
-                            acordado com os herdeiros do seu casal, resolveu vender esse escravo
-                            Germano, que também é quebrado em uma das virilhas, com os defeitos
-                            existentes e os encobertos que possa ter [...] ‌(RCVE de Germano, 1872,‌
-                            ‌p.24v, grifo meu).</p>
-
-                        <p style="text-align: justify;">Foragidos também se encontravam o escravizado Ignacio, crioulo
-                            de 30
-                            anos, quando seu proprietário Manuel Umbelino de Freitas o vendeu para José Maria
-                            Gonçalves de Araújo em 19 de Setembro de 1872 ‌(RCVE de Ignacio, 1872, p.26v) e a
-                            escravizada Bárbara, que foi vendida por Venceslau Correia de Carvalho, residente no
-                            lugar chamado Bonito, ao comerciante Antônio da Rocha Maya, ambos do distrito de
-                            Carolina, pelo valor de 400  mil réis. Em seu registro de compra e venda feito em
-                            30/07/1881 consta um pedido de licença feito por Venceslau para efetivar a negociação
-                            de Bárbara, nele</p>
-                        <p class="par-cit" style="text-align: justify;">[...] Diz Venceslau Correia Carvalho, morador
-                            neste termo, que possuindo
-                            seus filhos orphãos - Firmino, Antonio, Vicente e Ursula - todos menores de
-
-                            dose annos de idade, uma escrava de nome Bárbara, de vinte e um anos de
-                            idade, mulata, solteira, natural da provincia do Ceará, acontece que a
-                            referida escrava evadio-se ultimamente de casa do suplicante para esta
-                            cidade disendo que lá mais não voltaria, o suplicante para evitar o prejuiso
-                            de seus filhos ohphãos, e as despezas a que é subcarregado sempre que tem
-                            de mandar em seguimento da referida escrava, o tem resolvido vendel-a, e
-                            achando negocio a [?] com gados e animais [?] produtivos, pelo que vem
-                            requerer a Vossa Senhoria, que se sirva conceder-lhe licença para que possa
-                            effetivar a dita venda visto ser este o único  meio de evitar o prejuiso de seus
-                            filhos orphãos [...] (RCVE de Barbara, 1881, p.59, grifos meus).</p>
-                        <p class="par">Quase um ano depois, em 09/05/1882, Bárbara teve seu destino mais uma
-                            vez redefinido por uma nova escritura de compra e venda. Antonio da Rocha Maya, sem
-                            expor os motivos, oficializou sua venda ao fazendeiro Claudio Gomes Goveia, morador
-                            na província do Goiás e presente naquele momento na cidade de Carolina, pelo valor de
-                            500 mil réis (RCVE de Bárbara, 1882, p.80). Não posso dizer que essa nova negociação
-                            foi fruto de mais um “ato de rebeldia” feito por Bárbara, ou se Antonio Maya, descrito
-                            como comerciante, tinha entre seus produtos dispostos em sua “quitanda” carne
-                            humana, e Bárbara seria mais um dos itens disponíveis. O certo é que Bárbara mais uma
-                            vez mudaria de residência, e com isso teria que buscar estratégias para (re)construir
-                            laços que pudessem servir de auxílio e mesmo de acolhida em um novo lar.</p>
-                        <p class="par">As relações entre senhores/as e suas propriedades (escravizados/as) nos
-                            sertões do Maranhão, parece que adquiriram múltiplas tonalidades que em muitas vezes
-                            não eram encontradas na capital da província. Henry Koster, de passagem pelo
-                            Maranhão no começo do século XIX, diz que não teve “[...] muitas informações a
-                            respeito do interior [...]” (KOSTER, 1942, p.246), mas dentre as anedotas que ouviu ele
-                            destaca a história de</p>
-                        <p class="par-cit">um escravo mulato [que] fugira do seu amo e, com o passar dos anos,
-                            tornou-se rico, comprando terras, abundante de gado. Numa certa
-                            ocasião, tinha reunido nos currais numerosa boiada, e instruía seus vaqueiros
-                            para envia-la aos diferentes mercados para a venda, quando um
-                            desconhecido, sozinho, vindo de longe segundo parecia, parou e lhe pediu
-                            uma conversação em particular. Depois de pouco tempo retiraram-se para
-                            perto e quando se encontraram a sós o dono da casa disse: ‘Agradeço não ter
-                            o senhor denunciado a ligação que existe entre nós enquanto os meus
-                            vaqueiros estavam presentes’. Era o antigo amo, pobre, em circunstancias
-                            miseraveis, que lhe vinha fazer uma visita na esperança de obter algum fraco
-                            recurso. Disse-lhe que ficaria reconhecido por qualquer cousa que recebesse.
-                            Sabia que não era possível reclamar o escravo e estava no poder de um
-                            homem que podia dar ordem para assassina-lo imediatamente. O escravo
-                            ofereceu ao seu amo muitas centenas de bois e ordenou a um homem que o
-                            acompanhasse até o mercado, dizendo aos seus vaqueiros que acabava de
-                            pagar uma velha divida, de que só agora ouvira falar. Um homem capaz de
-                            realizar um ato desta forma merecia a liberdade que resolvera
-                            conquistar (KOSTER, 1942, p.46-47, grifo meu).</p>
-                        <p class="par">Manoel Gonçalves de Sousa parece não ter tido “dores de cabeça” como o
-                            principal motivo para vender “[...] o escravo Joaquim [...] à Dona Juliana Moreira Pereira
-                            [..]”‌ (RCVE de Joaquim, 1876, p.7v), já conhecida por nós, em 19 de Abril de 1876. Manoel
-                            Gonçalves ao passar o direito de posse do referido escravizado à Dona Juliana Moreira,
-                            impõe à mesma a condição de</p>
-                        <p class="par-cit">[...] não o poder vender a pessoa alguma, sem que em primeiro lugar o offereça a elle vendedor, e se em qualquer tempo elle vendedor quiser comprar o dito escravo, a compradora será obrigada a vender-lhe pela mesma quantia que agora o compra. Pela compradora Juliana Moreira Pereira foi dito perante as [...] testemunhas que aceitava a presente escritura [...] ‌(RCVE de Joaquim, 1876, ‌p.8, grifos meus).</p>
-                        <p class="par">Infelizmente não há na documentação informações que pudessem dar pistas de
-                            como era a relação entre o escravizado Joaquim descrito como “[...] crioulo, de cor preta,
-                            com idade de trinta e cinco annos pouco mais ou menos, solteiro, roceiro, natural deste
-                            termo [...]” e seu “ex-senhor e ex-possuidor” Manoel, que fizesse este último querer, assim
-                            que pudesse, Joaquim de volta. Sabe-se que Joaquim foi deixado como “[...] herança de seus
-                            pais [...]” e que foi vendido por uma quantia alta, se pegarmos os padrões de valores pagos
-                            na época registrados na documentação por mim pesquisada, 1 conto de réis‌ (RCVE de
-                            Joaquim, 1876, ‌p.7v).</p>
-                        <p class="par">Os bons e extensos pastos dos sertões sul-maranhenses não serviram apenas para
-                            abrigar os vaqueiros e suas boiadas. Representaram também lugares de refúgios,
-                            esconderijos, abrigos e de liberdade para àqueles/as que viveram sob o  jugo da escravidão.
-                            Os  exemplos‌ acima nos levam‌ ‌a‌ ‌pensar‌ ‌nas‌ ‌estratégias‌ ‌possíveis‌ ‌criadas‌ ‌por‌
-                            ‌aqueles‌ ‌sujeitos‌‌
-                            escravizados,‌ ‌que ‌‌mesmo ‌‌com ‌‌alguma ‌‌dificuldade ‌‌física, como foi o caso de
-                            Germano,
-                            ‌‌sonharam ‌‌e ‌‌buscaram ‌‌a ‌‌tão‌‌ desejada ‌‌liberdade. Com esses atos de rebeldia, de
-                            desobediência
-                            às normas senhoriais estabelecidas, Germano, Ignacio e Bárbara teriam (re)forçado o desejo
-                            em seus senhores/as de lhes vender. E assim, talvez, encontrar em outra morada melhores
-                            condições de (re)existência naquele ambiente tão opressor quanto era a sociedade escravista
-                            na qual viviam. As ‌‌relações que‌ ‌definiram‌ ‌os‌ ‌vínculos‌ ‌entre‌ ‌os/as‌
-                            ‌escravizados/as‌ ‌e‌ ‌seus/uas‌‌
-                            senhores/as não eram caracterizadas apenas por ‌‌uma‌“‌‌mansa‌‌ e‌ ‌passifica‌ ‌posse‌”,‌
-                            ‌como‌ ‌alguns
-                            e algumas senhores/as deixaram registrados/as em‌ ‌vários‌ ‌registros‌ ‌de‌ ‌compra‌ ‌e‌
-                            ‌venda‌ ‌de‌‌
-                            escravizados/as.‌ ‌Aqueles/as homens e mulheres cativos/as ‌‌‌fugiram, ‌‌resistiram e
-                            provocaram
-                            fissuras na estrutura daquela sociedade senhorial que pudessem lhes dar possibilidades de
-                            (re)criarem espaços para exercerem suas subjetividades e, no limite, também suas vontades.
-                        </p>
-                        <p class="par">Referência: Livro de registro de compra e venda de escravizados/as 1877-1884 -
-                            Tribunal de Justiça do Estado do Maranhão - São Luís-MA).</p>
-
-                        <p style="text-align: justify;">Diante disso trouxemos dois documentos do século XIX para análise e resolução das questões propostas. Para leitura dos mesmos siga os seguintes passos:</p>
-                        <div class="divider-small"></div>
-
+                        <!--Post meta-->
                         <div>
-                            <ul>
-                                <li class="ullista">1º - ao passar o cursor do mouse por cima das imagens a baixo, uma lupa aparecerá para a melhor visualização do conteúdo.</li>
-                                <li class="ullista">2º - Você poderá acessar o documento transcrito clicando no botão "documento transcrito"</li>
-                                <li class="ullista">3º - ao acessar o documento transcrito é possível ampliar a imagem, clicando na mesma</li>
-                            </ul>
+                            <audio style="width: 50%;" controls>
+                                <source src="horse.ogg" type="audio/ogg">
+                                <source
+                                    src="https://www.google.com/speech-api/v2/synthesize?enc=mpeg&client=chromium&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&text=HOMENS%20VAQUEIROS%20E%20ESCRAVIZADOS%20NOS%20SERT%C3%95ES%20DE%20PASTOS%20BONS%3A%20FRANCISCO%2C%20JO%C3%83O%20E%20MANOEL.%0AO%20processo%20de%20coloniza%C3%A7%C3%A3o%20do%20territ%C3%B3rio%20maranhense%20foi%20realizado%20de%20duas%20formas%3A%20no%20norte%20houve%20a%20implanta%C3%A7%C3%A3o%20da%20agroexporta%C3%A7%C3%A3o%2C%20com%20forte%20presen%C3%A7a%20do%20Estado%20portugu%C3%AAs%2C%20amparado%20no%20emprego%20da%20m%C3%A3o%20de%20obra%20escravizada%20negra%2C%20chamado%20de%20frente%20de%20expans%C3%A3o%20litor%C3%A2nea.%20J%C3%A1%20no%20sul-maranhense%2C%20a%20conquista%20do%20territ%C3%B3rio%20tomou%20outros%20rumos.%20L%C3%A1%20foi%20realizada%20por%20vaqueiros%20vindos%20da%20Bahia%20e%20Pernambuco%2C%20tangendo%20suas%20boiadas%20e%20formando%20currais%2C%20que%20eram%20administrados%20por%20eles%20e%20seus%20filhos%2C%20homens%20livres%20e%20%E2%80%9Cbrancos%E2%80%9D.%20A%20coloniza%C3%A7%C3%A3o%20desse%20vasto%20territ%C3%B3rio%20foi%20poss%C3%ADvel%20gra%C3%A7as%20%C3%A0%20expans%C3%A3o%20pastoril.%20Sobre%20a%20participa%C3%A7%C3%A3o%20de%20escravizados%2Fas%20no%20trabalho%20cotidiano%20das%20fazendas%20sul-%20maranhenses%2C%20a%20professora%20Socorro%20Cabral%20(1992%2C%20p.106)%20afirma%20que%0A%0AO%20trabalho%20escravo%20e%20o%20livre%20foram%20utilizados%20com%20frequ%C3%AAncia.%20Ao%20que%20parece%2C%20os%20escravos%20desempenhavam%20fun%C3%A7%C3%A3o%20subalterna%20atribu%C3%ADda%20aos%20f%C3%A1bricas.%20Em%20nenhuma%20fonte%20consultada%20encontramos%20refer%C3%AAncia%20a%20vaqueiros%20escravos%2C%20o%20que%20nos%20leva%20a%20sugerir%20que%20os%20vaqueiros%20eram%20sempre%20recrutados%20entre%20os%20trabalhadores%20livres.%0A%0ACriou-se%20a%20ideia%20de%20uma%20identidade%20regional%20sul-maranhense%20constru%C3%ADda%20a%20partir%20da%20figura%20do%20vaqueiro%2C%20repito%2C%20visto%20como%20homem%20livre%20e%20%E2%80%9Cbranco%E2%80%9D.%20%C3%89%20preciso%20aprofundar%20as%20investiga%C3%A7%C3%B5es%20sobre%20a%20sociedade%20sertaneja%20constru%C3%ADda%20ao%20longo%20das%20margens%20dos%20rios%20sul-maranhenses%20durante%20seu%20processo%20de%20conquista.%20Problematizar%20a%20ideia%20da%20exist%C3%AAncia%20de%20uma%20%C3%BAnica%20narrativa%20para%20se%20compreender%20o%20processo%20de%20forma%C3%A7%C3%A3o%20daquela%20sociedade%2C%20que%20n%C3%A3o%20foi%20obra%20apenas%20de%20uma%20classe%20social%20(CABRAL%2C%201992%2C%20p.166).%0A%0ANas%20an%C3%A1lises%20feitas%20no%20corpus%20documental%20que%20disponho%2C%20surgiram%20fragmentos%20de%20hist%C3%B3rias%20que%20podem%20nos%20ajudar%20a%20compreender%20os%20espa%C3%A7os%20em%20branco%20constru%C3%ADdos%20h%C3%A1%20tempos%20pela%20historiografia%20maranhense%20sobre%20as%20rela%C3%A7%C3%B5es%20entre%20livres%2C%20libertos%2Fas%20e%20escravizados%2Fas%2C%20que%20juntos%20formaram%20aquela%20sociedade%20(GINZBURG%2C%202002%2C%20p.100-117).%20O%20sert%C3%A3o%20daqueles%20sujeitos%20era%20m%C3%BAltiplo%20e%20din%C3%A2mico.%20Homens%20e%20mulheres%20escravizados%2Fas%20assumiram%20fun%C3%A7%C3%B5es%20que%20em%20alguns%20casos%2C%20n%C3%A3o%20s%C3%B3%20relativizavam%2C%20mas%20tamb%C3%A9m%20invertiam%20a%20ordem%20das%20coisas.%20Dentro%20da%20constru%C3%A7%C3%A3o%20dos%20espa%C3%A7os%20sociais%20que%20eram%20forjados%20naquela%20realidade%2C%20a%20trajet%C3%B3ria%20de%20cada%20escravizado%2Fa%20sertanejo%2Fa%20sul-maranhense%2C%20muitas%20vezes%2C%20deslocou%20as%20hierarquias%2C%20criou%20espa%C3%A7os%20de%20fuga%20e%20no%20limite%20de%20liberdade.%20Alguns%2Fmas%20cativos%2Fas%20conseguiram%20subverter%20as%20normas%20e%20os%20modelos%20pr%C3%A9-estabelecidos%2C%20e%2C%20assim%2C%20ressignificaram%20as%20rela%C3%A7%C3%B5es%20constru%C3%ADdas%20entre%20si%20e%20com%20os%2Fas%20livres%20e%20libertos%2Fas.&lang=pt-BR&speed=0.5&pitch=0.55"
+                                    type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
                         </div>
-                        <div class="divider-small"></div>
+
+                        <div class="transparencia">
+
+
+
+
+                            <div id="texto" class="postTitle">
+                                <h1>A HISTÓRIA DE BÁRBARA</h1>
+                                <div class="divider-small"></div>
+                            </div>
+                            <!--Post title-->
+
+
+                            <p style="text-align: justify;">Diante disso trouxemos dois documentos do século XIX para
+                                análise e resolução das questões propostas. Para leitura dos mesmos siga os seguintes
+                                passos:</p>
+                            <div class="divider-small"></div>
+
+                            <div>
+                                <ul>
+                                    <li class="ullista">1º - ao passar o cursor do mouse por cima das imagens a baixo,
+                                        uma lupa aparecerá para a melhor visualização do conteúdo.</li>
+                                    <li class="ullista">2º - Você poderá acessar o documento transcrito clicando no
+                                        botão "documento transcrito"</li>
+                                    <li class="ullista">3º - ao acessar o documento transcrito é possível ampliar a
+                                        imagem, clicando na mesma</li>
+                                </ul>vicencia/vicencia.jpeg
+                            </div>
+                            <div class="divider-small"></div>
+                            <div id="transcrito" class="container clearfix">
+                                <div class="row">
+                                    <!-- === Blog item 1 === -->
+                                    <div class="col-sm-6" data-wow-duration="1s" data-wow-delay="0.7s">
+                                        <div class="portfolio-item mx-auto" data-toggle="modal"
+                                            data-target="#portfolioModal1">
+                                            <div class="blog-media">
+                                                <a href="#"><img class="light-zoom"
+                                                        src="./img/img_registros_casamento/rg1.png" alt=""></a>
+                                            </div>
+                                            <!--post media-->
+                                        </div>
+
+
+                                        <div class="blog-post-info clearfix">
+                                            <span class="time"><i class="fa fa-calendar"></i> 12 January 2017</span>
+                                            <span class="comments"><a href="#"><i class="fa fa-comments"></i> 4
+                                                    Comments</a></span>
+                                        </div>
+                                        <!--post info-->
+
+                                        <div class="blog-post-body">
+                                            <div class="portfolio-item mx-auto" data-toggle="modal"
+                                                data-target="#portfolioModal1">
+                                                <h4><a class="title" href="#">1º Documento</a></h4>
+                                            </div>
+
+                                            <p class="p-bottom-20">Referência: p. 75. Livro de Casamento 1881-1886.
+                                                Paroquia de
+                                                Carolina-MA.</p>
+                                            <br>
+                                            <div class="portfolio-item mx-auto" data-toggle="modal"
+                                                data-target="#portfolioModal1">
+                                                <button class="btn btn-primary" href="#portfolioModal1"
+                                                    data-dismiss="modal">
+                                                    Documento transcrito
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!--post body-->
+                                    </div> <!-- /.blog -->
+                                    <!-- === Blog item 1 === -->
+                                    <div class="col-sm-6" data-wow-duration="1s" data-wow-delay="0.7s">
+                                        <div class="portfolio-item mx-auto" data-toggle="modal"
+                                            data-target="#portfolioModal2">
+                                            <div class="blog-media">
+                                                <a href="#"><img class="light-zoom"
+                                                        src="./img/img_registros_casamento/rg1.png" alt=""></a>
+                                            </div>
+                                            <!--post media-->
+                                        </div>
+
+
+                                        <div class="blog-post-info clearfix">
+                                            <span class="time"><i class="fa fa-calendar"></i> 12 January 2017</span>
+                                            <span class="comments"><a href="#"><i class="fa fa-comments"></i> 4
+                                                    Comments</a></span>
+                                        </div>
+                                        <!--post info-->
+
+                                        <div class="blog-post-body">
+                                            <div class="portfolio-item mx-auto" data-toggle="modal"
+                                                data-target="#portfolioModal2">
+                                                <h4><a class="title" href="#">1º Documento</a></h4>
+                                            </div>
+
+                                            <p class="p-bottom-20">Referência: p. 75. Livro de Casamento 1881-1886.
+                                                Paroquia de
+                                                Carolina-MA.</p>
+                                            <br>
+                                            <div class="portfolio-item mx-auto" data-toggle="modal"
+                                                data-target="#portfolioModal2">
+                                                <button class="btn btn-primary" href="#portfolioModal2"
+                                                    data-dismiss="modal">
+                                                    Documento transcrito
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!--post body-->
+                                    </div> <!-- /.blog -->
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <br><br><br>
+
+
+
+
+
+
+
 
                     </div>
-                    <div id="transcrito" class="container clearfix">
-                        <div class="row">
-                            <!-- === Blog item 1 === -->
-                            <div class="col-sm-6" data-wow-duration="1s" data-wow-delay="0.7s">
-                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                                    <div class="blog-media">
-                                        <a href="#"><img class="light-zoom" src="./img/img_registros_casamento/rg1.png" alt=""></a>
-                                    </div>
-                                    <!--post media-->
-                                </div>
-
-
-                                <div class="blog-post-info clearfix">
-                                    <span class="time"><i class="fa fa-calendar"></i> 12 January 2017</span>
-                                    <span class="comments"><a href="#"><i class="fa fa-comments"></i> 4
-                                            Comments</a></span>
-                                </div>
-                                <!--post info-->
-
-                                <div class="blog-post-body">
-                                    <div class="portfolio-item mx-auto" data-toggle="modal"
-                                        data-target="#portfolioModal1">
-                                        <h4><a class="title" href="#">1º Documento</a></h4>
-                                    </div>
-
-                                    <p class="p-bottom-20">Referência: p. 75. Livro de Casamento 1881-1886. Paroquia de
-                                        Carolina-MA.</p>
-                                    <br>
-                                    <div class="portfolio-item mx-auto" data-toggle="modal"
-                                        data-target="#portfolioModal1">
-                                        <button class="btn btn-primary" href="#portfolioModal1" data-dismiss="modal">
-                                            Documento transcrito
-                                        </button>
-                                    </div>
-                                </div>
-                                <!--post body-->
-                            </div> <!-- /.blog -->
-                            <!-- === Blog item 1 === -->
-                            <div class="col-sm-6" data-wow-duration="1s" data-wow-delay="0.7s">
-                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                                    <div class="blog-media">
-                                        <a href="#"><img class="light-zoom" src="./img/img_registros_casamento/rg1.png" alt=""></a>
-                                    </div>
-                                    <!--post media-->
-                                </div>
-
-
-                                <div class="blog-post-info clearfix">
-                                    <span class="time"><i class="fa fa-calendar"></i> 12 January 2017</span>
-                                    <span class="comments"><a href="#"><i class="fa fa-comments"></i> 4
-                                            Comments</a></span>
-                                </div>
-                                <!--post info-->
-
-                                <div class="blog-post-body">
-                                    <div class="portfolio-item mx-auto" data-toggle="modal"
-                                        data-target="#portfolioModal2">
-                                        <h4><a class="title" href="#">1º Documento</a></h4>
-                                    </div>
-
-                                    <p class="p-bottom-20">Referência: p. 75. Livro de Casamento 1881-1886. Paroquia de
-                                        Carolina-MA.</p>
-                                    <br>
-                                    <div class="portfolio-item mx-auto" data-toggle="modal"
-                                        data-target="#portfolioModal2">
-                                        <button class="btn btn-primary" href="#portfolioModal2" data-dismiss="modal">
-                                            Documento transcrito
-                                        </button>
-                                    </div>
-                                </div>
-                                <!--post body-->
-                            </div> <!-- /.blog -->
-                        </div>
-                    </div>
-
-
-
-
 
 
 
 
                     <!--End post single-->
-
-
-
-
 
 
                 </div> <!-- /.col -->
@@ -430,56 +364,142 @@
                     <div class="widget">
                         <h4>Outros conteúdos</h4>
                         <ul class="cat-list">
-                            <li><a href="./professor.html#casamento">Área dos/as Professores/as</a></li>
+                            <li><a href="./professor.html#casamento">Área docente</a></li>
+                            <li><a href="./ref_documentos.html">Documentos complementares</a></li>
+                            <li><a onclick="salvar_pdf()">Orientação</a>
+                                <ul>
+                                    <li>Caso deseje salvar a página: aperte as teclas Ctrl + P, aparacerá a opção de
+                                        "impressão" ou "salvar PDF"</li>
+                                    <li>Você pode também clicar com o botão direito do mouse e clicar em imprimir, após
+                                        isso, é só escolher uma das opções citadas</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
-                    <!--End widget-->
+                </div>
+                <!--end col-->
+                <!--End widget-->
 
 
-                    <!--Widget 4-->
-                    <div class="widget">
-                        <h4>Documentação</h4>
-                        <ul class="cat-archives">
-                            <li><a href="#">Ano de 1870</a></li>
-                            <li><a href="#">Ano de 1871</a></li>
-                            <li><a href="#">Ano de 1872</a></li>
-                            <li><a href="#">Ano de 1873</a></li>
-                            <li><a href="#">Ano de 1874</a></li>
-                        </ul>
+
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+                <!--Start Questões-->
+                <section id="questoes">
+                    <h1 style="text-align: center;">A história de Bárbara</h1>
+                    <p style="text-align: center;">Continuando a história de Bárbara, desenvolva uma história fictícia
+                        mostrando a
+                        sua visão sobre o destino de Bárbara</p>
+
+                    <h3 style="color: red; text-align: center">Ateção - sessão em desenvolvimento</h3>
+                    <div>
+                        <div id="textoAna"></div>
+                        <div id="respostaTAn"></div>
                     </div>
-                    <!--End widget-->
-                </div> <!-- /.col -->
+
+
+
+
+                </section>
+
+
+
 
             </div> <!-- /.row -->
         </div> <!-- /.container -->
 
     </section>
     <!--End blog single section-->
-    <section id="questoes">
-        <h1 style="text-align: center;">A história de Bárbara</h1>
-        <p style="text-align: center;">Continuando a história de Bárbara, desenvolva uma história fictícia mostrando a
-            sua visão sobre o destino de Bárbara</p>
 
-                                <h3 style="color: red; text-align: center">Ateção - sessão em desenvolvimento</h3>
-                                <div>
-                                    <div id="textoAna"></div>
-                                    <div id="respostaTAn"></div>
-                                </div>
+    <!--Start VLibras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!--End VLibras-->
+
+    <section class="fundo" id="referencia">
 
 
-        <!--Star Comentários-->
-        <section id="comentario" class="dark-bg p-top-80 p-bottom-80">
-            <div class="container ">
-                <div class="row">
-                    <iframe src="https://rhuayuri.github.io/docsul/comentarios.html" verticalscrolling="no"
-                        style="height: 60vh;width: 100%;" frameborder="0" scrolling="no"></iframe>
+
+
+        <div class="fundo-branco" >
+            <div class="row" style="margin-left: 5%;">
+                <div class="section-title text-center m-bottom-30">
+                    <div class="divider-small"></div>
+                    <h3 class="par">REFERÊNCIAS:</h3>
+                    <p class="par">ANDRADE, Antônia de Castro. <strong>Laços de compadrio entre escravizados/as no Sul
+                            do
+                            Maranhão (1854-1888)</strong>. São Luís: Café &amp; Lápis; EDUFMA, 2020.</p>
+                    <p class="par">CABRAL, Maria do Socorro Coelho. <strong>Caminhos do gado<strong>: conquista e
+                                ocupação do Sul
+                                do Maranhão. São Luís: SIOGE, 1992.</p>
+
+                    <p class="par">CAMPOS, Flávio de; PINTO, Júlio Pimentel; CLARO, Regina.<strong>Oficina de
+                            história</strong>:
+                        vol. 1. 2ª ed. São Paulo: Leya, 2016.</p>
+
+                    <p class="par">FRANKLIN, Adalberto; CARVALHO, João Renôr Ferreira. <strong>Francisco de Paula
+                            Ribeiro</strong>: desbravador dos sertões de Pastos Bons. A base geográfica e humana do Sul
+                        do Maranhão. Imperatriz - MA: Ética, 2007.</p>
+
+                    <p class="par">GINZBURG, Carlos. <strong>Relações de força: história, retórica, prova</strong>. São
+                        Paulo:
+                        Companhia das Letras, 2002.</p>
+
+                    <p class="par">MORAES, Ana Paula da Cruz Pereira de. <strong>Em busca da liberdade</strong>: os
+                        escravos no
+                        sertão do Rio Piranhas, 1700-1750. Dissertação (Mestrado em História) Universidade
+                        Federal de Campina Grande, Campina Grande-RN, 2009. Disponível em:
+                        <a
+                            href="http://dspace.sti.ufcg.edu.br:8080/jspui/handle/riufcg/2538">http://dspace.sti.ufcg.edu.br:8080/jspui/handle/riufcg/2538</a>.
+                        Acesso em: 7 de mar. de
+                        2023.
+                    </p>
+                    <br>
+                    <div class="divider-small"></div>
+                    <h3 class="par">DOCUMENTOS:</h3>
+                    <p class="par">- Carta de Liberdade de Raimundo. (Livro de Notas 1875-1881, Tribunal de Justiça do
+                        Estado do Maranhão - São Luís-MA).</p>
+                    <p class="par">- Registro de Compra e Venda de João. (Livro de registro de compra e venda de
+                        escravizados/as 1866 - Tribunal de Justiça do Estado do Maranhão - São Luís-MA).</p>
+                    <p class="par">- Registro de Compra e Venda de Francisco. (Livro de registro de compra e venda de
+                        escravizados/as 1869-1876 - Tribunal de Justiça do Estado do Maranhão - São Luís-
+                        MA).</p>
+
                 </div>
+
             </div>
-        </section>
-        <!--End Comentários-->
 
 
+        </div>
+        </div>
     </section>
+
+
+
+
+    <!--Star Comentários-->
+    <section id="comentario" class="light-bg p-top-80 p-bottom-80">
+        <div class="container ">
+            <div class="row">
+                <div class="responsive-iframe">
+                    <iframe class="" src="https://rhuayuri.github.io/docsul/comentarios.html" verticalscrolling="no"
+                        frameborder="0" scrolling="yes"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End Comentários-->
+
+
 
 
 
@@ -488,13 +508,9 @@
         <div class="container">
             <small class="copyright pull-left">Copyrights © 2019 All Rights Reserved By <a
                     href="http://www.tabthemes.com/">tabthemes</a>.</small>
-            <div class="social-icon pull-right">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-pinterest"></i></a>
-                <a href="#"><i class="fa fa-google"></i></a>
-                <a href="#"><i class="fa fa-rss"></i></a>
-                <a href="#"><i class="fa fa-globe"></i></a>
+            <div class="social-icon pull-right" style="text-align: right;">
+                <img src="./img/logo_rodape.png" style="max-width: 50%; text-align: right;" alt="">
+
             </div>
             <!-- /social-icon -->
         </div>
@@ -502,76 +518,11 @@
     </footer>
     <!-- End Footer -->
 
-
-    <!-- Back to top -->
-    <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-angle-up"></i></a>
-    <!-- /Back to top -->
-    <script>
-
-        $(document).ready(function () {
-            $('img.light-zoom').lightzoom({
-                zoomPower: 3,    //Default
-                glassSize: 180,  //Default
-            });
-        });
-
-
-    </script>
-
-    <script type="text/babel">
-        let textos = {
-        'texto1': 'caminhão',
-        'texto2': 'carro',
-        'texto3': 'moto'
-    }
-
-        let respostaAn = {
-            'questao1': 'História',
-            'questao2': 'Física',
-            'questao3': 'Matemática',
-            'questao4': 'Sociologia',
-            'questao5': 'Geografia',
-        }
-
-        function verificarResposta(nome, id) {
-            var suaReposta = document.querySelector('input[name="' + nome + '"]:checked').value;
-            let textoRes = ''
-            if (respostasCorretas[nome] == suaReposta) {
-                console.log('if')
-                textoRes = (
-                    <div style={{ textAlign: "left", border: "2px solid #28a745" }}>
-                        <strong> Sua resposta está correta | Resposta: {suaReposta} </strong>
-                    </div>
-                )
-            } else {
-                console.log('else')
-                textoRes = (
-                    <div style={{ textAlign: "left", border: "2px solid red" }}>
-                        <strong> Sua resposta está incorreta | Resposta correta {respostasCorretas[nome]} | Sua escolha: {suaReposta} </strong>
-                    </div>
-                )
-            }
-            let resposta = (
-                <div>
-                    {textoRes}
-                    <p style={{ textAlign: "justify" }}>{listaExplicacao[nome]}</p>
-
-                </div>
-            )
-            ReactDOM.render(
-                resposta,
-                document.getElementById(id)
-            );
-        }
-    </script>
-
-    <!-- Zoom -->
-
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
         aria-labelledby="portfolioModal1Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
+            <div class="modal-content" style="width: 105%!important;  min-height: 80vh;">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">
 
@@ -579,118 +530,73 @@
                 </button>
                 <div class="modal-body text-center">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title -->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">1º Registro de
-                                    compra de Bárbara</h2>
-                                <!-- Icon Divider -->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="portfolio-modal-title text-secondary text-uppercase mb-0">1º Documento
+                                </h3>
+                                <p class="mb-5" style="text-align: justify;">Eu Manoel Gonçalves de Souza, tabelião
+                                    escrevi este testemunho de verdade (estava no sinal
+                                    público) O tabelião público e interino Manoel Gonçalves de Souza. Era o que se
+                                    continha em
+                                    dito papel cujo conteúdo bem e fielmente para aqui extrai e depois com este entregue
+                                    que,
+                                    digo, entregue a parte abaixo assinada na presença das testemunhas que também
+                                    assinam. Eu
+                                    Manoel Gonçalves se Souza, tabelião público interino, o escrevi e assino em público
+                                    e [ilegível].
+                                    Em testemunho de verdade (estava o sinal público). O tabelião público interino
+                                    Manoel
+                                    Gonçalves de Souza, Justino Soares da Motta, Clementina Barros, Fortunato Pereira da
+                                    Conceição. Número um mil quatrocentos= pagou quatrocentos reis de selo de verba por
+                                    falta
+                                    de estampilhas. Carolina vinte e nove de dezembro de mil oitocentos e setenta e um.
+                                    Nogueira. O escrivão interino Cavalcante. E pelo comprado me foi apresentado a guia
+                                    e
+                                    conhecimento do teor seguinte = Trajano [ilegível] Rodrigues, vai a coletoria do
+                                    município
+                                    pagar a meia siza e adicional correspondente a quantia de oitocentos e cinquenta mil
+                                    reis, por
+                                    quanto comprou a Justino Soares da Motta um escravizado de nome João de quarenta e
+                                    três
+                                    anos de idade, casado, natural de Pastos Bons, crioulo, vaqueiro e bem assim selo
+                                    proporcional</p>
 
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+
+                                <br>
+                            </div>
+
+                            <!-- Portfolio Modal - Text -->
+                            <div class="col-md-6">
                                 <!-- Portfolio Modal - Image -->
 
-                                <p class="par">Escriptura de Venda da Escrava Barbara, de propriedade dos órfãos -
-                                    Firmino, Antonio,
-                                    Vicente e Ursula que faz seu pai Venceslão Correia de Carvalho, com licença do juis
-                                    dos
-                                    Orphãos a Antonio da Rocha Maya, pela quantia de quatrocentos mil reis .</p>
-                                <p class="par">Saibão quanto este publico instrumento de escriptura de Venda de escravo,
-                                    ou como em
-                                    direito melhor se tenha, virem, que no anno de Nascimento de Nosso Senhor Jesus
-                                    Christo de
-                                    mil oitocentos oitenta e um, aos trinta dias do mez de julho do dito anno, nesta
-                                    Cidade e
-                                    Comarca de Carolina, da província do Maranhão, em meu Cartorio comparecerão partes
-                                    justas
-                                    e contratadas, a saber, como vendedor Venceslão Correia de Carvalho, lavrador,
-                                    residente no
-                                    lugar “Bonito” deste termo, e como comprador - Antonio da Rocha Maya, comerciante,
-                                    morador na rua do Porto grande, ambos do primeiro distrito desta cidade e de mim
-                                    reconhecido pelos próprios de que trato e dou fé.</p>
-                                <p class="par">Perante as testemunhas infra nomeadas e assignadas me foi dito pelo
-                                    vendedor Venceslão
-                                    Correia de Carvalho, que seus filhos Ophãos - Firmino, Antonio, Vicente e Ursula,
-                                    possuem
-                                    uma escrava de nome Barbara, mulata, com idade hoje de vinte e dois annos, solteira,
-                                    sem
-                                    filhos, natural da província do Ceará, devidamente matriculada na Colletoria Geral
-                                    do
-                                    Municipio da Folha, da mesma Provincia sob números - trinta e dois da Ordem e
-                                    trezentos e
-                                    quarenta da Ordem da matricula, averbada na, digo, da matricula, em sete de Abril de
-                                    mil
-                                    oitocentos e setenta e três, e averbada na Colletoria desta Cidade em dezoito de
-                                    Fevereiro de
-                                    mil oitocentos e oitenta, como se verifica na Certidão que apresentou e vai abaixo
-                                    transcripta,
-                                    cuja escrava está esenta da taxa por morar fora do perimetro desta Cidade, como
-                                    também se
-                                    vê de outra Certidão que apresentou: e, para que obtivesse licença do respectivo
-                                    Juis de
-                                    Ophão deste Termo, pois vende a mencionada escrava, cuja licença dar transcripto no
-                                    fim
-                                    desta escriptura, com a certidão; da inspeção da taxa anual, pelo presente
-                                    instrumento vende,
-                                    como de fato vendido tem a dita escrava Barbara a Antonio da Rocha Maya, pela
-                                    quantia de
-                                    quatrocentos mil reis moeda corrente que neste acto recebeu pelo que dá ao comprador
-                                    pela
-                                    e qual quitação de paga, e lhe transfere toda a posse, juiz e domínio que os órfãos
-                                    seus filhos
-                                    nella tenham, para que o Comprador a possa usufruir e dispor como sua que desde já
-                                    fica
-                                    sendo, pois assignarem este contrato fica logo empossado da referida escrava. Disse
-                                    mais, que
-                                    promete e se obriga a ter e manter esta venda sempre boa, de paz, firme e valiosa,
-                                    tanto em
-                                    juízo como fora dele, e cuja exceção obriga sua pessoa e bens.</p>
-                                <p class="par">Pelo comprador Antonio da Rocha Maya, me foi dito que aceitava a presente
-                                    escriptura nos
-                                    termos expressados e me apresentou em conhecimento sob números - dezenove, datado de
-                                    hoje, pelo qual mostrou haver prazo na Colletoria Provincial desta Cidade, a quantia
-                                    de vinte e
-                                    dois mil reis de meia siza e adicional, correspondente ao valor do contrato; assim
-                                    como uma
-                                    guia, em que se via a verba do sello proporcional de theor seguinte - numero três -
-                                    Reis,
-                                    duzentos - Pagou duzentos reis, digo, Reis, quatrocentos - Pagou quatrocentos reis
-                                    de sello de
-                                    Verba. Carolina, trinta de julho de mil oitocentos e oitenta e um - O agente
-                                    Colletor - B.
-                                    [ilegível]. Está conforme; ficando conhecimento da meia siza, com a guia em que está
-                                    o valor
-                                    do sello proporcional, archivados em meu Cartorio. Assim o disserão, outorgarão,
-                                    ouvirão lei,
-                                    aceitarão e assignarão com as testemunhas e Octavio Victaliano B[ilegível] Silveira,
-                                    que
-                                    também são reconhecidos de mim Silverio R[ilegível] de Moareis Leal. Tabelião que o
-                                    escrevo e
-                                    assigno em publico e [ilegível] p. 63</p>
-                                <p class="par">[...] acontece que a referida escrava evadio-se ultimamente de Casa do
-                                    suplicante opra esta
-                                    Cidade dizendo que lá mais não voltaria, o suplicante para evitar o prejuízo de seus
-                                    filhos
-                                    órfãos, e as despesas a que é subcarregado sempre que tem de mandar em seguimento da
-                                    referida escrava, tem resolvido vendel-a, e achando negocio [...].</p>
-                                <p class="par" style="font-style: bold !important;">É um documento que está junto com a
-                                    certidão de venda.</p>
-                                <p class="par" style="font-style: bold !important;">Pedido de autorização às autoridades
-                                    para efetuar a venda feita por Venceslão, tutor de seus
-                                    filhos, órfãos..</p>
+                                <a href="./img/atividades/vaqueiro/João.jpg"
+                                    data-options="zoomPosition:right;expand:false;hint:off;"
+                                    class="MagicZoom pf-style lightbox-image mfp-image">
+                                    <img class="port_img" src="./img/atividades/vaqueiro/João.jpg" /></a>
 
-                                <p class="par-cit" style="text-align: center;">Fonte: p. 75. Livro de Casamento 1881-1886. Paroquia de
-                                    Carolina-MA.</p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
 
-                                    Fechar Janela
-                                </button>
+
+                                <p style="font: caption;">Fonte: REGISTRO DE COMPRA E VENDA DO ESCRAVIZADO JOÃO,
+                                    27.1.1871, P.19.</p>
+
+                                <br>
+                                <p class="mb-5" style="text-align: justify;">Carolina vinte e sete de janeiro de mil
+                                    oitocentos e setenta e dois. O tabelião
+                                    Manoel Gonçalves de Souza = Número um = reis mil = pagou um mil reis de selo de
+                                    verba por
+                                    falta de estampilhas. Carolina vinte e sete de janeiro de mil oitocentos e setenta e
+                                    dois.
+                                    Nogueira Oliveira= Número trinta e seus. Coletoria província de Carolina, ano de
+                                    1871 a 1872,
+                                    no livro de receita fica lançado ao coletor interino José Cavalcante.
+                                </p>
                             </div>
+
                         </div>
+                        <button class="btn btn-primary" href="#" data-dismiss="modal">
+
+                            Fechar Janela
+                        </button>
                     </div>
                 </div>
             </div>
@@ -701,7 +607,7 @@
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
         aria-labelledby="portfolioModal2Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
+            <div class="modal-content" style="width: 105%!important;  min-height: 80vh;">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">
 
@@ -709,123 +615,401 @@
                 </button>
                 <div class="modal-body text-center">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title -->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">2º REGISTRO DE COMPRA E VANDA DE BÁRBARA. P. 80 a 83</h2>
-                                <!-- Icon Divider -->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="portfolio-modal-title text-secondary text-uppercase mb-0">2º Documento
+                                </h3>
+                                <p class="mb-5" style="text-align: justify;">Carta de liberdade do mulato escravizado
+                                    que foi do Tenente Coronel Leonardo Pereira de
+                                    Araújo Britto, lançado em nota a pedido de seu senhor.
+                                    Eu, Leonardo Pereira de Araújo Britto, abaixo assinado, declaro que por minha morte
+                                    ou pela
+                                    de minha mulher Dona Clara Britto Chaves de Araújo, ficará liberto, como se de
+                                    ventre livre
+                                    tivesse nascido, o meu escravizado de nome Manoel, mulato com idade hoje de trinta e
+                                    seis
+                                    anos, mais ou menos, solteiro, vaqueiro, natural da comarca da Imperatriz desta
+                                    província do
+                                    Maranhão, em remuneração aos bons serviços que tem prestado e esta declaração lhe
+                                    sirva de
+                                    título de sua liberdade para constar, digo, para constar mandei passar o presente
+                                    que assino.
+                                    Carolina vinte e sete de janeiro de mil oitocentos e setenta e dois. O tabelião
+                                    Manoel Gonçalves de Souza = Número um = reis mil = pagou um mil reis de selo de
+                                    verba por
+                                    falta de estampilhas. Carolina vinte e sete de janeiro de mil oitocentos e setenta e
+                                    dois.
+                                    Nogueira Oliveira= Número trinta e seus. Coletoria província de Carolina, ano de
+                                    1871 a 1872,
+                                    no livro de receita fica lançado ao coletor interino José Cavalcante.
 
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                </p>
+
+
+                                <br>
+                            </div>
+
+                            <!-- Portfolio Modal - Text -->
+                            <div class="col-md-6">
                                 <!-- Portfolio Modal - Image -->
 
-                                <p class="par">Escriptura de venda de uma escrava de nome Barbara que faz Antonio da Rocha Maya, à
-                                    Claudio Gomes de Gouveia, pela quantia de 500$000 reis, como abaixo se declara.</p>
-                                <p class="par">Saibão quanto este publico instrumento de escriptura de venda de escravo ou como em direito
-                                    melhor nome tenha virem, que no anno de Nascimento de Nosso Senhor Jesus Christo de mil
-                                    oitocentos e oitenta e dois, aos nove dias do mez de Maio do dito anno, nesta cidade de
-                                    Carolina, da provincia do Maranhão, compareceram partes justas e contratadas a saber: como
-                                    vendedor – Antonio de Carvalho Serra, digo, Antonio da Rocha Maya, Comerciante,
-                                    residente a rua de Santo Antonio, do primeiro Distrito desta Cidade; e como comprador
-                                    Claudio Gomes de Gouveia, Fazendeiro, morador na província de Goyaz e de presente nesta
-                                    Cidade, ambos de mim reconhecidos pelos próprios de que trato, fé, digo, de que trato e dou
-                                    fé. Pelo vendedor me foi dito, que possue uma escrava de nome Barbara, mulata, com idade
-                                    hoje de vinte e trez annos, solteira, sem filhos, cozinheira, natural da província do Ceará,
-                                    matriculada no município da Folha da mesma província e avaliada neste município cuja
-                                    escrava houve por compra que fez à Venceslão Correia de Carvalho, como tudo [ilegível]
-                                    documento que apresentou e é do theor seguinte = Bernardo Simão dos Santos Lima, escrivão
-                                    interino da Colletoria das [ilegível] gerais desta Cidade da Carolina por nomeação legal.
-                                    [ilegível] requerimento verbal de penhor Antonio da Rocha Maya - Certifico que a escrava
-                                    Barbara de cor mulata, bôa aptidão para o trabalho, cozinheira, matriculada na província do
-                                    Ceará, no município de Folha sob numero de trinta e dois da ordem e trezentos e quarenta de
-                                    ordem da matricula d`aquella mesma província e atualmente avaliada neste municipio de
-                                    Carolina no livro competente a folhas quatro sob numero trinta e dois de ordem de matricula e
-                                    trezentos e quarenta da matricula geral em dezoito de Fevereiro de mil oitocentos e oitenta –
-                                    Foi n`aquella data de avaliação neste municipio pelo Senhor Venceslão Correia de Carvalho e
-                                    contava a idade de vinte e um annos - E como o mesmo Senhor Antonio da Rocha Maya - rasão
-                                    por que ficou pertencendo ao mesmo Senhor Maya, como se vê no dito Livro de averbação na
-                                    dita folha quatro a indicação feita no lugar da observação. E cuja escrava nada deve a fazenda
-                                    por que o senhor Maya pagou a taxa de doze mil reis no tempo Competente. É o que se
-                                    contem nos ditos livros desta repartição à meu cargo. Carolina, nove de Maio de mil
-                                    oitocentos oitenta e dois. O escrivão interino Santos Lima. Certidão, dois mil seiscentos
-                                    cincoenta reis - Sello duzentos reis [...]</p>
-                               
+                                <a href="./img/atividades/vaqueiro/Manoel.jpg"
+                                    data-options="zoomPosition:right;expand:false;hint:off;"
+                                    class="MagicZoom pf-style lightbox-image mfp-image">
+                                    <img class="port_img" src="./img/atividades/vaqueiro/Manoel.jpg" /></a>
 
-                                <p class="par-cit" style="text-align: center;">Fonte: p. 75. Livro de Casamento 1881-1886. Paroquia de
-                                    Carolina-MA.</p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
 
-                                    Fechar Janela
-                                </button>
+
+                                <p style="font: caption;">Fonte: REGISTRO DA CARTA DE LIBERDADE DO ESCRAVIZADO MANOEL,
+                                    13.2.1886, P.158V.</p>
+
                             </div>
+
                         </div>
+                        <button class="btn btn-primary" href="#" data-dismiss="modal">
+
+                            Fechar Janela
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--Start VLibras-->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal56" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal56Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content" style="width: 105%!important;  min-height: 80vh;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a style="margin-top: 20%;" href="./img/img_registros_casamento/rg2-3.png"
+                                    data-options="zoomPosition:right;expand:false;hint:off;"
+                                    class="MagicZoom pf-style lightbox-image mfp-image">
+                                    <img class="port_img" src="./img/img_registros_casamento/rg2-3.png" /></a>
+                                <p style="font: caption;">Fonte: Livro de Casamento 1881-1886, p. 78v. (Paroquia de
+                                    Carolina-MA). Grifos meus.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class=" text-secondary  mb-0">2º Documento
+                                </h2>
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mb-5" style="text-align: justify;">Aos cinco dias do mez de Outubro de mil
+                                    oitocentos e oitenta e cinco Assisti ao matrimônio e que entre si celebrarão -
+                                    Luiz, escravo e Ignez da Cunha Ribeiro: ele é filho natural de Mª Francisca; já
+                                    falecida, e elle é escravo de José Cavalcante Maranhão; ella é filha legítima de
+                                    Martiliano da Cunha Machado e de Anna Ribeiro Machado, sendo testemunhas -
+                                    Sebastião de Souza Danta, Ignnacio José Rodrigues, Luiza Rosa da Silva e
+                                    Benecdita Gomes de Britto, ao que para constar mandei fazer o presente termo,
+                                    que assigno. O Vigrº Encommmdº Pe. Carrilio Prrª da Sª Luzo.</p>
+
+                            </div>
+
+                        </div>
+                        <button class="btn btn-primary" href="#" data-dismiss="modal">
+
+                            Fechar Janela
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-    <!--End VLibras-->
+    </div>
+    </div>
 
 
 
-    <!-- jQuery -->
-    <!-- Custom scripts for this template -->
-    <script src="./vendor/freelancer.min.js"></script>
-    <script src="./vendor/bootstrap.bundle.min.js"></script>
-    <script src="./js/jquery.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Components Plugin -->
-    <script src="./js/jquery.easing.1.3.js"></script>
-    <script src="./js/smooth-scroll.js"></script>
-    <script src="./js/jquery.appear.js"></script>
-    <script src="./js/jquery.countTo.js"></script>
-    <script src="./js/jquery.stellar.min.js"></script>
-    <script src="./js/jquery.magnific-popup.min.js"></script>
-    <script src="./js/imagesloaded.pkgd.min.js"></script>
-    <script src="./js/isotope.pkgd.min.js"></script>
-    <script src="./js/jquery.mb.YTPlayer.js"></script>
-    <!-- <script src="./js/retina.min.js"></script> -->
-    <script src="./js/wow.min.js"></script>
-    <script src="./inc/owlcarousel/js/owl.carousel.min.js"></script>
+    <!-- Portfolio Modal 11 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal11Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div>
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
 
-    <!-- Recurso Zoom -->
-    <script src="./zoom/lightzoom.js"></script>
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title -->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">1º
+                                        DOCUMENTO
+                                    </h2>
+                                    <!-- Icon Divider -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
 
-    <script>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image -->
+                                    <a href="./img/img_registros_casamento/rg1.png" data-dismiss="modal"
+                                        class="pf-style lightbox-image mfp-image">
+                                        <img src="./img/img_registros_casamento/rg1.png" alt="Feature Image"
+                                            data-wow-duration="1s" data-wow-delay="0.6s" />
+                                    </a>
 
-        $(document).ready(function () {
-            $('img.light-zoom').lightzoom({
-                zoomPower: 3,    //Default
-                glassSize: 180,  //Default
+
+                                    <p style="font: caption;">Fonte: Livro de Casamento 1881-1886, p. 75. (Paroquia
+                                        de Carolina-MA). Grifos meus.</p>
+                                    <br>
+
+                                    <!--Área para escrever a transcrição-->
+                                    <form class="w3-container">
+                                        <label class="text-teal"><b>Resposta</b></label>
+                                        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                                    </form>
+                                    <button class="fazerTrans">
+                                        transcrever
+                                    </button>
+                                    <p class="transcricao"></p>
+                                    <div class="portfolio-item mx-auto" data-toggle="modal"
+                                        data-target="#portfolioModal1">
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                            Acesse o documento transcrito
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Portfolio Modal 22 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal22" tabindex="-1" role="dialog"
+            aria-labelledby="portfolioModal22Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title -->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">2º
+                                        Documento
+                                    </h2>
+                                    <!-- Icon Divider -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image -->
+                                    <a href="./img/img_registros_casamento/rg2-3.png" data-dismiss="modal"
+                                        class="pf-style lightbox-image mfp-image">
+                                        <img src="./img/img_registros_casamento/rg2-3.png" alt="Feature Image"
+                                            data-wow-duration="1s" data-wow-delay="0.6s" />
+                                    </a>
+
+
+                                    <p style="font: caption;">Fonte: Livro de Casamento 1881-1886, p. 78v. (Paroquia
+                                        de
+                                        Carolina-MA). Grifos meus.</p>
+                                    <br>
+
+                                    <!--Área para escrever a transcrição-->
+                                    <form class="w3-container">
+                                        <label class="text-teal"><b>Resposta</b></label>
+                                        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                                    </form>
+                                    <button class="fazerTrans">
+                                        transcrever
+                                    </button>
+                                    <p class="transcricao"></p>
+                                    <div class="portfolio-item mx-auto" data-toggle="modal"
+                                        data-target="#portfolioModal1">
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                            Acesse o documento transcrito
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Back to top -->
+        <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-angle-up"></i></a>
+        <!-- /Back to top -->
+
+        <script>
+            $('.fazerTrans').on('click', adicionarTexto)
+
+            function adicionarTexto() {
+                var valorDoComentario = $('#comentario').val()
+
+                $('.transcricao').text(valorDoComentario)
+            }
+        </script>
+
+
+
+        <script src="./js/download-padrao.js"></script>
+
+        <script type="text/babel">
+            let respostasCorretas = {
+                'questao1': 'A',
+                'questao2': 'C',
+                'questao3': 'E',
+                'questao4': 'A',
+                'questao5': 'B',
+            }
+            let listaExplicacao = {
+                'questao1': 'História',
+                'questao2': 'Física',
+                'questao3': 'Matemática',
+                'questao4': 'Sociologia',
+                'questao5': 'Geografia',
+            }
+
+            function verificarResposta(nome, id) {
+                var suaReposta = document.querySelector('input[name="' + nome + '"]:checked').value;
+                let textoRes = ''
+                if (respostasCorretas[nome] == suaReposta) {
+                    console.log('if')
+                    textoRes = (
+                        <div style={{ textAlign: "left", border: "2px solid #28a745" }}>
+                            <strong> Sua resposta está correta | Resposta: {suaReposta} </strong>
+                        </div>
+                    )
+                } else {
+                    console.log('else')
+                    textoRes = (
+                        <div style={{ textAlign: "left", border: "2px solid red" }}>
+                            <strong> Sua resposta está incorreta | Resposta correta {respostasCorretas[nome]} | Sua escolha: {suaReposta} </strong>
+                        </div>
+                    )
+                }
+                let resposta = (
+                    <div>
+                        {textoRes}
+                        <p style={{ textAlign: "justify" }}>{listaExplicacao[nome]}</p>
+
+                    </div>
+                )
+                ReactDOM.render(
+                    resposta,
+                    document.getElementById(id)
+                );
+            }
+        </script>
+
+        <script type="text/babel">
+
+            function verificarTranscricao(texto, id) {
+                var suaReposta = document.querySelector('input[name="' + texto + '"]:checked').value;
+                let textoRes = ''
+                if (respostasCorretas[texto] == suaTranscricao) {
+                    console.log('if')
+                    textoRes = (
+                        <div style={{ textAlign: "left", border: "2px solid #28a745" }}>
+                            <strong> Sua resposta está correta | Resposta: {suaTranscricao} </strong>
+                        </div>
+                    )
+                } else {
+                    console.log('else')
+                    textoRes = (
+                        <div style={{ textAlign: "left", border: "2px solid red" }}>
+                            <strong> Sua resposta está incorreta | Resposta correta {respostasCorretas[texto]} | Sua escolha: {suaTranscricao} </strong>
+                        </div>
+                    )
+                }
+                let resposta = (
+                    <div>
+                        {textoRes}
+                        <p style={{ textAlign: "justify" }}>{listaExplicacao[texto]}</p>
+
+                    </div>
+                )
+                ReactDOM.render(
+                    resposta,
+                    document.getElementById(id)
+                );
+            }
+        </script>
+
+
+
+
+
+        <!-- Custom scripts for this template -->
+        <script src="./vendor/freelancer.min.js"></script>
+        <script src="./vendor/bootstrap.bundle.min.js"></script>
+        <script src="./js/jquery.min.js"></script>
+
+
+
+        <!-- Bootstrap -->
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Components Plugin -->
+        <script src="./js/jquery.easing.1.3.js"></script>
+        <script src="./js/smooth-scroll.js"></script>
+        <script src="./js/jquery.appear.js"></script>
+        <script src="./js/jquery.countTo.js"></script>
+        <script src="./js/jquery.stellar.min.js"></script>
+        <script src="./js/jquery.magnific-popup.min.js"></script>
+        <script src="./js/imagesloaded.pkgd.min.js"></script>
+        <script src="./js/isotope.pkgd.min.js"></script>
+        <script src="./js/jquery.mb.YTPlayer.js"></script>
+        <script src="./js/retina.min.js"></script>
+        <script src="./js/wow.min.js"></script>
+        <script src="./inc/owlcarousel/js/owl.carousel.min.js"></script>
+
+
+
+        <script src="./js/freelancer.min2.js"></script>
+        <script src="./zoom/lightzoom.js"></script>
+
+
+
+        <script>
+
+            $(document).ready(function () {
+                $('img.light-zoom').lightzoom({
+                    zoomPower: 3,    //Default
+                    glassSize: 180,  //Default
+                });
             });
-        });
-
-    </script>
 
 
 
 
-    <!-- Custom Plugin -->
-    <script src="js/custom.js"></script>
+        </script>
+
+        <!-- Custom Plugin -->
+        <script src="./js/custom.js"></script>
+
+
 
 </body>
 
