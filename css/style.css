@@ -2426,23 +2426,23 @@ grid-auto-columns: 1fr;
 }
 
 .lateral-avatar{
-    display: flex;
+    display: flex !important;
 }
 
 .div-left {
-  width: 80%; /* Largura das divs */
-  margin-right: -2px; /* Espaçamento entre as divs */
+  width: 80% !important; /* Largura das divs */
+  margin-right: -2px !important; /* Espaçamento entre as divs */
 }
 
 .div-center{
-  margin: 0 auto;
-  width: 20%;
+  margin: 0 auto !important;
+  width: 20% !important;
 
 }
 
 .div-center-min{
-  margin: 0 auto;
-  width: 50%;
+  margin: 0 auto !important;
+  width: 50% !important;
 
 }
 
@@ -2451,15 +2451,15 @@ grid-auto-columns: 1fr;
 
 /* Estilo para a imagem do avatar (substitua './img/novas_imagens/vaqueiro.jpeg' pelo URL da sua imagem) */
 .avatar-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 1%; /* Torna a imagem circular */
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 1% !important; /* Torna a imagem circular */
 }
 
 
 .div-right{
-  width: 20%; /* Largura das divs */
-  margin: 0px; /* Espaçamento entre as divs */
+  width: 20% !important; /* Largura das divs */
+  margin: 0px !important; /* Espaçamento entre as divs */
   
 }
 
@@ -2469,8 +2469,8 @@ grid-auto-columns: 1fr;
     margin: 0px; /* Espaçamento entre as divs */
   }
   .div-left {
-    width: 60%; /* Largura das divs */
-    margin-right: -2px; /* Espaçamento entre as divs */
+    width: 60% !important; /* Largura das divs */
+    margin-right: -2px !important; /* Espaçamento entre as divs */
   }
   
 }
