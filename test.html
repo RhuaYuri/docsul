@@ -1,52 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!-- <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagem sobre Div</title>
     <style>
-        .container {
-            position: relative;
-            width: 300px;
-            height: 200px;
-            background-color: lightgray;
+        /* Estilo para o avatar na parte superior direita */
+        .avatar-top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000; /* Garante que o avatar esteja acima de outros elementos */
         }
 
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        /* Estilo para o avatar no centro */
+        .avatar-center {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000; /* Garante que o avatar esteja acima de outros elementos */
+        }
+
+        /* Estilo para a imagem do avatar (substitua './img/novas_imagens/vaqueiro.jpeg' pelo URL da sua imagem) */
+        .avatar-img {
+            width: 100px; /* Tamanho do avatar */
+            height: 100px;
+            border-radius: 50%; /* Torna a imagem circular */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- A <img> será adicionada aqui via JavaScript -->
+    <div class="avatar-top-right">
+        <img src="./img/novas_imagens/vaqueiro.jpeg" alt="Avatar" class="avatar-img">
     </div>
 
-    <script>
-        // Cria um elemento de imagem
-        const img = document.createElement('img');
-        img.src = './img/img_registros_casamento/capa-casamentos.jpg'; // Substitua pelo caminho da sua imagem
 
-        // Adiciona a imagem à div com a classe "container"
-        const container = document.querySelector('.container');
-        container.appendChild(img);
-    </script>
+    <h1>Meu Site</h1>
+    <p>Conteúdo da página...</p>
+
+   
+    <div class="avatar-center">
+        <img src="./img/novas_imagens/vaqueiro.jpeg" alt="Avatar" class="avatar-img">
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilo para as divs */
+        .div-container {
+            display: flex; /* Use o display flex para alinhar as divs horizontalmente */
+        }
+
+        .div-box {
+            width: 100px; /* Largura das divs */
+            height: 100px; /* Altura das divs */
+            margin: 10px; /* Espaçamento entre as divs */
+            background-color: #3498db; /* Cor de fundo das divs (exemplo) */
+        }
+    </style>
+</head>
+<body>
+    <div class="div-container">
+        <div class="div-box"></div>
+        <div class="div-box"></div>
+        <div class="div-box"></div>
+    </div>
 </body>
 </html>
-Neste exemplo, nós:
-
-Criamos uma <div> com a classe "container", que será nossa <div> alvo.
-Definimos estilos CSS para a <div> e para a imagem para que a imagem cubra completamente a <div>.
-Usamos JavaScript para criar um elemento de imagem <img> dinamicamente.
-Definimos o atributo src da imagem com o caminho para a sua imagem desejada.
-Adicionamos a imagem como filho da <div> com a classe "container" usando appendChild().
-Certifique-se de substituir './img/img_registros_casamento/capa-casamentos.jpg' pelo caminho real da sua imagem. Isso criará uma imagem que se sobrepõe à <div> e cobre completamente a área da <div>.
-
-
-
-
-
