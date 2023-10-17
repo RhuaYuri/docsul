@@ -2362,6 +2362,9 @@ grid-auto-columns: 1fr;
   white-space: pre-line;
   word-wrap: break-word;
  }
+
+
+
  .par-cit{
   font-size: 12px;
   text-align: justify;
@@ -2443,9 +2446,38 @@ grid-auto-columns: 1fr;
 .div-center-min{
   margin: 0 auto !important;
   width: 50% !important;
+  height: 10% !important;
 
 }
 
+.selecionado {
+  background-color: yellow;
+}
+
+   /* Estilo para o botão flutuante */
+   .botao-flutuante {
+    position: fixed;
+    top: 53%;
+    right: 1% !important;
+    transform: translateY(20%);
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 30%;
+    width: 32px;
+    height: 32px;
+}
+
+
+
+
+.path-center{
+  margin: 0 auto !important;
+  right: 1px !important;
+}
+textarea {
+  width: 100%  !important;
+}
 
 
 

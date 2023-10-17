@@ -1,71 +1,63 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        /* Estilo para o avatar na parte superior direita */
-        .avatar-top-right {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            z-index: 1000; /* Garante que o avatar esteja acima de outros elementos */
-        }
-
-        /* Estilo para o avatar no centro */
-        .avatar-center {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1000; /* Garante que o avatar esteja acima de outros elementos */
-        }
-
-        /* Estilo para a imagem do avatar (substitua './img/novas_imagens/vaqueiro.jpeg' pelo URL da sua imagem) */
-        .avatar-img {
-            width: 100px; /* Tamanho do avatar */
-            height: 100px;
-            border-radius: 50%; /* Torna a imagem circular */
-        }
-    </style>
-</head>
-<body>
-    <div class="avatar-top-right">
-        <img src="./img/novas_imagens/vaqueiro.jpeg" alt="Avatar" class="avatar-img">
-    </div>
-
-
-    <h1>Meu Site</h1>
-    <p>Conteúdo da página...</p>
-
-   
-    <div class="avatar-center">
-        <img src="./img/novas_imagens/vaqueiro.jpeg" alt="Avatar" class="avatar-img">
-    </div>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Leitor de Texto para Cegos</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
     <style>
-        /* Estilo para as divs */
-        .div-container {
-            display: flex; /* Use o display flex para alinhar as divs horizontalmente */
+        /* Estilo para destacar o texto selecionado */
+        .selecionado {
+            background-color: yellow;
         }
 
-        .div-box {
-            width: 100px; /* Largura das divs */
-            height: 100px; /* Altura das divs */
-            margin: 10px; /* Espaçamento entre as divs */
-            background-color: #3498db; /* Cor de fundo das divs (exemplo) */
+        /* Estilo para o botão flutuante */
+        .botao-flutuante {
+            position: fixed;
+            top: 50%; /* Ajuste a posição vertical conforme necessário */
+            right: 10px; /* Ajuste a posição horizontal conforme necessário */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div class="div-container">
-        <div class="div-box"></div>
-        <div class="div-box"></div>
-        <div class="div-box"></div>
+    <button id="botaoLeitura" class="botao-flutuante" onclick="ativarLeitura()">Ler</button>
+    <div id="conteudo">
+        <p id="textoParaLeitura">Clique para ler o texto em voz alta.</p>
     </div>
+
+    <script>
+        let leituraAtiva = false; // Variável para controlar a ativação da leitura
+
+        function ativarLeitura() {
+            leituraAtiva = true;
+        }
+
+        document.getElementById("textoParaLeitura").addEventListener("click", function() {
+            if (leituraAtiva) {
+                var textoParaLeitura = document.getElementById("textoParaLeitura");
+
+                // Seleciona o texto para leitura
+                var texto = textoParaLeitura.textContent;
+
+                // Configura a voz e inicia a síntese usando ResponsiveVoice
+                responsiveVoice.speak(texto, "Brazilian Portuguese Female");
+
+                // Destacar o texto selecionado
+                textoParaLeitura.classList.add("selecionado");
+
+                // Remover o destaque após um curto período
+                setTimeout(function() {
+                    textoParaLeitura.classList.remove("selecionado");
+                }, 1000); // 1000 milissegundos = 1 segundo
+
+                leituraAtiva = false; // Desativa a leitura após a primeira execução
+            }
+        });
+    </script>
 </body>
 </html>
