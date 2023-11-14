@@ -29,7 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  background: #8b5f3d;
+  background-image: url('../img/portfolio/longas/campo.jpeg') !important;
   font-size: 14px;
   font-family: 'Lato', sans-serif;
   color: #000;
@@ -2489,11 +2489,31 @@ textarea {
 }
 
 
+@media screen and (max-width: 400px) {
+  .avatar-img {
+  margin-top: 30%;
+  width: 100% !important;
+  height: 50% !important;
+  border-radius: 1% !important; /* Torna a imagem circular */    
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .avatar-img {
+  width: 100% !important;
+  height: 40% !important;
+  border-radius: 1% !important; /* Torna a imagem circular */   
+  }
+
+}
+
+
 .div-right{
   width: 20% !important; /* Largura das divs */
   margin: 0px !important; /* Espaçamento entre as divs */
   
 }
+
 
 @media (max-width: 500px) {
   .div-right{
@@ -2502,6 +2522,18 @@ textarea {
   }
   .div-left {
     width: 60% !important; /* Largura das divs */
+    margin-right: -2px !important; /* Espaçamento entre as divs */
+  }
+  
+}
+
+@media (max-width: 320px) {
+  .div-right{
+    width: 30% !important; /* Largura das divs */
+    margin: 0px; /* Espaçamento entre as divs */
+  }
+  .div-left {
+    width: 30% !important; /* Largura das divs */
     margin-right: -2px !important; /* Espaçamento entre as divs */
   }
   
@@ -2547,6 +2579,10 @@ textarea {
   background-image: url('../img/portfolio/longas/photo1.png') !important;
 }
 
+
+.img-tamanho-vaqueiro{
+  background-image: url(../img/portfolio/longas/photo1.png) !important;
+}
 
 @media (max-width: 500px) {
   .video_tutorial {
