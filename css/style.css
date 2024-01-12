@@ -17,6 +17,25 @@ URL:            http://www.tabthemes.com/
 /*--------------------------------------------------
     01. General Styles 
 ---------------------------------------------------*/
+.buttonAudio {
+  position: fixed;
+
+  max-width: 100vw;
+  min-height: 40px;
+  min-width: 40px;
+  right: 0;
+  margin-right: 0.5%;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 2147483647 !important;
+  color: #ffffff;
+  background-color: #007BFF;
+  line-height: 1.3;
+  font-size: 16px;
+  border-radius: 8px;
+  }
+
+  
 html {
   overflow-y: scroll;
   -ms-overflow-style: scrollbar;
@@ -2580,6 +2599,10 @@ textarea {
 }
 
 
+.highlight {
+  background-color: rgb(147, 207, 247);
+}
+
 .img-tamanho-vaqueiro{
   background-image: url(../img/portfolio/longas/photo1.png) !important;
 }
@@ -2595,6 +2618,9 @@ textarea {
     font-size: 14px;
     word-wrap: break-word;
   }
+
+
+
 
 
 
