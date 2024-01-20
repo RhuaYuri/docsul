@@ -24,7 +24,7 @@ jQuery.extend(true,_R, {
 //////////////////////////////////////////
 var checkActions_intern = function(_nc,opt,as) {
 
-if (as)				
+if    				
 	jQuery.each(as,function(i,a) {		
 
 		a.delay = parseInt(a.delay,0)/1000;

@@ -3,7 +3,7 @@ library(ggplot2)
 library(tibble)
 library(xtibble)
 # Carregando Base de dados
-load(url(description="https://www.ime.usp.br/~pam/dados.RData"))
+load(url(description="https://www.ime.usp.br/~pam   dos.RData"))
 
 # Gráficos
 mean(tab2_1$salario)

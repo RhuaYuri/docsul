@@ -937,7 +937,7 @@ var animateSlideIntern = function(nexttrans, comingtransition, container,  opt, 
 	if (nexttrans==12 || nexttrans==13 || nexttrans==14 || nexttrans==15) {
 				masterspeed = masterspeed;
 				if (masterspeed>opt.delay) masterspeed=opt.delay;
-				//masterspeed = 1000;
+				/  terspeed = 1000;
 
 				setTimeout(function() {
 					punchgs.TweenLite.set(actsh.find('.defaultimg'),{autoAlpha:0});
