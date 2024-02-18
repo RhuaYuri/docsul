@@ -1355,6 +1355,7 @@ blockquote {
 .team-item:hover .team-item-name {
   color: #ed5f5e;
 }
+
 @media screen and (max-width: 540px) {
   #team .row [class*="col-"] {
     width: 100%;
