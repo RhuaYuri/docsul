@@ -462,7 +462,7 @@
                                     <div class="lateral-avatar">
 
                                         <div class="div-center">
-                                            <img src="./img/novas_imagens/cabeca_vaqueiro.png" alt="Avatar"
+                                            <img src="./img/novas_imagens/cabeca_vaqueiro.png" style="height: 50%;" alt="Avatar"
                                                 class="avatar-img">
                                         </div>
                                         <div class="div-left">
@@ -1292,8 +1292,11 @@
 
                     // Incluindo as imagens na string
                     images.forEach(function(image) {
-    string += '<img src="' + image.src + '" style="width: 50%;" alt="' + (image.alt || '') + '">';
-});
+                        if (!image.src.includes('/img/novas_imagens/vaqueiro.png')) {
+                            console.log('teste: ',image.src)
+                            string += '<img src="' + image.src + '" style="width: 100%;" alt="' + (image.alt || '') + '">';
+                        }
+                });
 
                     // Obtendo todos os inputs dentro da seção
                     var inputs = section.querySelectorAll('input, textarea');
