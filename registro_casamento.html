@@ -427,7 +427,7 @@
                     <!-- Widget 2 -->
                     <div class="widget">
                         <div class="div-center-min">
-                            <img src="./img/novas_imagens/vaqueiro.png" alt="Avatar" class="avatar-img">
+                            <img src="./img/novas_imagens/vaqueiro.png" id="nao" alt="Avatar" class="avatar-img">
                         </div>
                         <h4>Outros conteúdos</h4>
                         <ul class="cat-list">
@@ -1292,8 +1292,7 @@
 
                     // Incluindo as imagens na string
                     images.forEach(function(image) {
-                        if (!image.src.includes('/img/novas_imagens/vaqueiro.png')) {
-                            console.log('teste: ',image.src)
+                        if (image.id !== "nao") {
                             string += '<img src="' + image.src + '" style="width: 100%;" alt="' + (image.alt || '') + '">';
                         }
                 });
